@@ -1,15 +1,15 @@
 @font-face {
-	font-family: "ingaia-font-icons-1480943232";
-	src: url('../fonts/ingaia-font-icons-1480943232.eot');
-	src: url('../fonts/ingaia-font-icons-1480943232.eot?#iefix') format('eot'),
-		url('../fonts/ingaia-font-icons-1480943232.woff2') format('woff2'),
-		url('../fonts/ingaia-font-icons-1480943232.woff') format('woff'),
-		url('../fonts/ingaia-font-icons-1480943232.ttf') format('truetype'),
-		url('../fonts/ingaia-font-icons-1480943232.svg#ingaia-font-icons-1480943232') format('svg');
+	font-family: "ingaia-font-icons-1480945247";
+	src: url('../fonts/ingaia-font-icons-1480945247.eot');
+	src: url('../fonts/ingaia-font-icons-1480945247.eot?#iefix') format('eot'),
+		url('../fonts/ingaia-font-icons-1480945247.woff2') format('woff2'),
+		url('../fonts/ingaia-font-icons-1480945247.woff') format('woff'),
+		url('../fonts/ingaia-font-icons-1480945247.ttf') format('truetype'),
+		url('../fonts/ingaia-font-icons-1480945247.svg#ingaia-font-icons-1480945247') format('svg');
 }
 
 .ing:before {
-	font-family: "ingaia-font-icons-1480943232";
+	font-family: "ingaia-font-icons-1480945247";
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
@@ -485,46 +485,50 @@
 	content: "\E074";
 }
 
-.ing-user-plus:before {
+.ing-user-close:before {
 	content: "\E075";
 }
 
-.ing-user:before {
+.ing-user-plus:before {
 	content: "\E076";
 }
 
-.ing-users:before {
+.ing-user:before {
 	content: "\E077";
 }
 
-.ing-volume-down:before {
+.ing-users:before {
 	content: "\E078";
 }
 
-.ing-volume-off:before {
+.ing-volume-down:before {
 	content: "\E079";
 }
 
-.ing-volume-up:before {
+.ing-volume-off:before {
 	content: "\E07A";
 }
 
-.ing-whatsapp:before {
+.ing-volume-up:before {
 	content: "\E07B";
 }
 
-.ing-youtube-play:before {
+.ing-whatsapp:before {
 	content: "\E07C";
 }
 
-.ing-youtube-square:before {
+.ing-youtube-play:before {
 	content: "\E07D";
 }
 
-.ing-youtube:before {
+.ing-youtube-square:before {
 	content: "\E07E";
 }
 
-.ing-template.html:before {
+.ing-youtube:before {
 	content: "\E07F";
+}
+
+.ing-template.html:before {
+	content: "\E080";
 }
