@@ -1,0 +1,39 @@
+{
+  "name": "ingaia-font-icons",
+  "version": "1.0.0",
+  "description": "inGaia Icons",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-fontcustom": "^0.1.2",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-iconfont-css": "^2.1.0"
+  },
+	
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingaia/font.icons.git"
+  },
+
+	"keywords": [
+    "icons",
+    "inGaia"
+  ],
+	
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-iconfont-template": "0.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inGaia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingaia/font.icons/issues"
+},
+  "homepage": "https://github.com/ingaia/font.icons#readme"
+}

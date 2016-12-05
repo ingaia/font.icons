@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="ingaia-font-icons.css">
+<style type="text/css">
+.ing-binary {
+    font-family: "ingaia-font-icons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.my-class-name:before{
+	content: "\E001";
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    float: left;
+    text-align: center;
+}
+ul li:hover{
+    background: #ddd;
+}
+
+#icon-list li{
+	padding: 10px;
+}
+.icon-show-type{
+	clear: both;
+}
+.icon-show-type li span{
+	display: block;
+	padding: 10px;
+}
+.icon-show-type input{
+	display: none;
+}
+.icon-show-type input:checked ~ span{
+	background: #ddd;
+}
+
+i{
+	display: block;
+}
+
+#icon-demo i{
+	float: left;
+    padding-left: 10px;
+}
+.class-name li, .hex li, .binary li{
+	display: none;
+}
+.class-name .class-name-demo{
+	display: block;
+}
+.hex .hex-demo{
+	display: block;
+}
+.binary .binary-demo{
+	display: block;
+}
+
+.binary .binary-demo pre{
+	display: inline;
+}
+
+.clearfix:after { 
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden 
+}
+
+</style>
+</head>
+<body>
+
+<ul class="icon-show-type clearfix">
+	<li>
+		<label onclick="showIconType(0)">
+			<input type="radio" name="icon-type">
+			<span>className</span>
+		</label>
+	</li>
+	<li>
+		<label onclick="showIconType(1)">
+			<input type="radio" name="icon-type">
+			<span>hex</span>
+		</label>
+	</li>
+	<li>
+		<label onclick="showIconType(2)">
+			<input type="radio" name="icon-type">
+			<span>binary</span>
+		</label>
+	</li>
+</ul>
+<hr/>
+Demo
+<div id="icon-demo" class="class-name clearfix">
+	<li class="class-name-demo">
+		<i class="ing ing-arrow-circle-up"></i>
+		<pre>
+			&lt;i class="ing ing-arrow-circle-up"&gt;&lt;/i&gt;
+		</pre>
+	</li>
+	<li class="hex-demo">
+		<i class="ing my-class-name"></i>
+		<pre>
+		    &lt;style&gt;
+			    .my-class-name:before{
+				    content: "\E001";
+				}
+			&lt;/style&gt;
+
+			&lt;i class="ing my-class-name"&gt;&lt;/i&gt;
+		</pre>
+	</li>
+	<li class="binary-demo">
+		<i class="ing-binary">&#57345;</i>
+		<pre>
+		    &lt;style&gt;
+				.ing-binary {
+				    font-family: "ingaia-font-icons";
+				    -webkit-font-smoothing: antialiased;
+				    -moz-osx-font-smoothing: grayscale;
+				    font-style: normal;
+				    font-variant: normal;
+				    font-weight: normal;
+				    text-decoration: none;
+				    text-transform: none;
+				}
+			&lt;/style&gt;
+			&lt;i class="ing-binary"&gt; &amp;#57345;&lt;/i&gt; 
+		</pre>
+	</li>
+</div>
+<hr/>
+<ul id="icon-list" class="class-name">
+
+<li class="class-name-demo">
+    <i class="ing ing-arrow-circle-up"></i>
+    <pre>ing-arrow-circle-up</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-arrow-circle-up"></i>
+    <pre>\E001</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57345;</i>
+    <pre>&amp;#57345;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-arrow-down"></i>
+    <pre>ing-arrow-down</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-arrow-down"></i>
+    <pre>\E002</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57346;</i>
+    <pre>&amp;#57346;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-ban"></i>
+    <pre>ing-ban</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-ban"></i>
+    <pre>\E003</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57347;</i>
+    <pre>&amp;#57347;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-bar-y"></i>
+    <pre>ing-bar-y</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-bar-y"></i>
+    <pre>\E004</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57348;</i>
+    <pre>&amp;#57348;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-bathroom"></i>
+    <pre>ing-bathroom</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-bathroom"></i>
+    <pre>\E005</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57349;</i>
+    <pre>&amp;#57349;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-bed"></i>
+    <pre>ing-bed</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-bed"></i>
+    <pre>\E006</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57350;</i>
+    <pre>&amp;#57350;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-box-o"></i>
+    <pre>ing-box-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-box-o"></i>
+    <pre>\E007</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57351;</i>
+    <pre>&amp;#57351;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-building"></i>
+    <pre>ing-building</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-building"></i>
+    <pre>\E008</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57352;</i>
+    <pre>&amp;#57352;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-bullhorn"></i>
+    <pre>ing-bullhorn</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-bullhorn"></i>
+    <pre>\E009</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57353;</i>
+    <pre>&amp;#57353;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calendar-birth"></i>
+    <pre>ing-calendar-birth</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calendar-birth"></i>
+    <pre>\E00A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57354;</i>
+    <pre>&amp;#57354;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calendar-car"></i>
+    <pre>ing-calendar-car</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calendar-car"></i>
+    <pre>\E00B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57355;</i>
+    <pre>&amp;#57355;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calendar-check"></i>
+    <pre>ing-calendar-check</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calendar-check"></i>
+    <pre>\E00C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57356;</i>
+    <pre>&amp;#57356;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calendar-clear"></i>
+    <pre>ing-calendar-clear</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calendar-clear"></i>
+    <pre>\E00D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57357;</i>
+    <pre>&amp;#57357;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calendar-phone"></i>
+    <pre>ing-calendar-phone</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calendar-phone"></i>
+    <pre>\E00E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57358;</i>
+    <pre>&amp;#57358;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calendar"></i>
+    <pre>ing-calendar</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calendar"></i>
+    <pre>\E00F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57359;</i>
+    <pre>&amp;#57359;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calender-birth"></i>
+    <pre>ing-calender-birth</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calender-birth"></i>
+    <pre>\E010</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57360;</i>
+    <pre>&amp;#57360;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calender-car"></i>
+    <pre>ing-calender-car</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calender-car"></i>
+    <pre>\E011</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57361;</i>
+    <pre>&amp;#57361;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calender-check"></i>
+    <pre>ing-calender-check</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calender-check"></i>
+    <pre>\E012</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57362;</i>
+    <pre>&amp;#57362;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calender-clear"></i>
+    <pre>ing-calender-clear</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calender-clear"></i>
+    <pre>\E013</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57363;</i>
+    <pre>&amp;#57363;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-calender-phone"></i>
+    <pre>ing-calender-phone</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-calender-phone"></i>
+    <pre>\E014</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57364;</i>
+    <pre>&amp;#57364;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-camera-no-image"></i>
+    <pre>ing-camera-no-image</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-camera-no-image"></i>
+    <pre>\E015</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57365;</i>
+    <pre>&amp;#57365;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-camera"></i>
+    <pre>ing-camera</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-camera"></i>
+    <pre>\E016</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57366;</i>
+    <pre>&amp;#57366;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-car"></i>
+    <pre>ing-car</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-car"></i>
+    <pre>\E017</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57367;</i>
+    <pre>&amp;#57367;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-check-circle"></i>
+    <pre>ing-check-circle</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-check-circle"></i>
+    <pre>\E018</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57368;</i>
+    <pre>&amp;#57368;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-check"></i>
+    <pre>ing-check</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-check"></i>
+    <pre>\E019</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57369;</i>
+    <pre>&amp;#57369;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-down"></i>
+    <pre>ing-chevron-down</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-down"></i>
+    <pre>\E01A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57370;</i>
+    <pre>&amp;#57370;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-left"></i>
+    <pre>ing-chevron-left</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-left"></i>
+    <pre>\E01B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57371;</i>
+    <pre>&amp;#57371;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-light-down"></i>
+    <pre>ing-chevron-light-down</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-light-down"></i>
+    <pre>\E01C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57372;</i>
+    <pre>&amp;#57372;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-light-left"></i>
+    <pre>ing-chevron-light-left</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-light-left"></i>
+    <pre>\E01D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57373;</i>
+    <pre>&amp;#57373;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-light-right"></i>
+    <pre>ing-chevron-light-right</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-light-right"></i>
+    <pre>\E01E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57374;</i>
+    <pre>&amp;#57374;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-light-up"></i>
+    <pre>ing-chevron-light-up</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-light-up"></i>
+    <pre>\E01F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57375;</i>
+    <pre>&amp;#57375;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-right"></i>
+    <pre>ing-chevron-right</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-right"></i>
+    <pre>\E020</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57376;</i>
+    <pre>&amp;#57376;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-chevron-up"></i>
+    <pre>ing-chevron-up</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-chevron-up"></i>
+    <pre>\E021</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57377;</i>
+    <pre>&amp;#57377;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-circle-o"></i>
+    <pre>ing-circle-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-circle-o"></i>
+    <pre>\E022</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57378;</i>
+    <pre>&amp;#57378;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-circle"></i>
+    <pre>ing-circle</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-circle"></i>
+    <pre>\E023</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57379;</i>
+    <pre>&amp;#57379;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-clip"></i>
+    <pre>ing-clip</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-clip"></i>
+    <pre>\E024</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57380;</i>
+    <pre>&amp;#57380;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-clock-3h"></i>
+    <pre>ing-clock-3h</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-clock-3h"></i>
+    <pre>\E025</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57381;</i>
+    <pre>&amp;#57381;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-clock"></i>
+    <pre>ing-clock</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-clock"></i>
+    <pre>\E026</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57382;</i>
+    <pre>&amp;#57382;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-close"></i>
+    <pre>ing-close</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-close"></i>
+    <pre>\E027</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57383;</i>
+    <pre>&amp;#57383;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-columns-alt"></i>
+    <pre>ing-columns-alt</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-columns-alt"></i>
+    <pre>\E028</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57384;</i>
+    <pre>&amp;#57384;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-comment-idea"></i>
+    <pre>ing-comment-idea</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-comment-idea"></i>
+    <pre>\E029</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57385;</i>
+    <pre>&amp;#57385;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-comment"></i>
+    <pre>ing-comment</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-comment"></i>
+    <pre>\E02A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57386;</i>
+    <pre>&amp;#57386;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-comments-rounded"></i>
+    <pre>ing-comments-rounded</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-comments-rounded"></i>
+    <pre>\E02B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57387;</i>
+    <pre>&amp;#57387;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-comments"></i>
+    <pre>ing-comments</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-comments"></i>
+    <pre>\E02C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57388;</i>
+    <pre>&amp;#57388;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-desktop"></i>
+    <pre>ing-desktop</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-desktop"></i>
+    <pre>\E02D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57389;</i>
+    <pre>&amp;#57389;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-double-right"></i>
+    <pre>ing-double-right</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-double-right"></i>
+    <pre>\E02E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57390;</i>
+    <pre>&amp;#57390;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-download"></i>
+    <pre>ing-download</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-download"></i>
+    <pre>\E02F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57391;</i>
+    <pre>&amp;#57391;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-edit"></i>
+    <pre>ing-edit</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-edit"></i>
+    <pre>\E030</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57392;</i>
+    <pre>&amp;#57392;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-envelope"></i>
+    <pre>ing-envelope</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-envelope"></i>
+    <pre>\E031</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57393;</i>
+    <pre>&amp;#57393;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-exchange"></i>
+    <pre>ing-exchange</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-exchange"></i>
+    <pre>\E032</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57394;</i>
+    <pre>&amp;#57394;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-exclamation-circle"></i>
+    <pre>ing-exclamation-circle</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-exclamation-circle"></i>
+    <pre>\E033</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57395;</i>
+    <pre>&amp;#57395;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-exclamation-triangle"></i>
+    <pre>ing-exclamation-triangle</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-exclamation-triangle"></i>
+    <pre>\E034</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57396;</i>
+    <pre>&amp;#57396;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-facebook-square"></i>
+    <pre>ing-facebook-square</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-facebook-square"></i>
+    <pre>\E035</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57397;</i>
+    <pre>&amp;#57397;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-facebook"></i>
+    <pre>ing-facebook</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-facebook"></i>
+    <pre>\E036</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57398;</i>
+    <pre>&amp;#57398;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-file-excel"></i>
+    <pre>ing-file-excel</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-file-excel"></i>
+    <pre>\E037</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57399;</i>
+    <pre>&amp;#57399;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-file-img"></i>
+    <pre>ing-file-img</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-file-img"></i>
+    <pre>\E038</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57400;</i>
+    <pre>&amp;#57400;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-file-pdf-o"></i>
+    <pre>ing-file-pdf-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-file-pdf-o"></i>
+    <pre>\E039</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57401;</i>
+    <pre>&amp;#57401;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-file-text"></i>
+    <pre>ing-file-text</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-file-text"></i>
+    <pre>\E03A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57402;</i>
+    <pre>&amp;#57402;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-file-word-o"></i>
+    <pre>ing-file-word-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-file-word-o"></i>
+    <pre>\E03B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57403;</i>
+    <pre>&amp;#57403;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-file-word"></i>
+    <pre>ing-file-word</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-file-word"></i>
+    <pre>\E03C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57404;</i>
+    <pre>&amp;#57404;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-file"></i>
+    <pre>ing-file</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-file"></i>
+    <pre>\E03D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57405;</i>
+    <pre>&amp;#57405;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-files"></i>
+    <pre>ing-files</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-files"></i>
+    <pre>\E03E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57406;</i>
+    <pre>&amp;#57406;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-flag-o"></i>
+    <pre>ing-flag-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-flag-o"></i>
+    <pre>\E03F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57407;</i>
+    <pre>&amp;#57407;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-flag"></i>
+    <pre>ing-flag</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-flag"></i>
+    <pre>\E040</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57408;</i>
+    <pre>&amp;#57408;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-gavel"></i>
+    <pre>ing-gavel</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-gavel"></i>
+    <pre>\E041</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57409;</i>
+    <pre>&amp;#57409;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-gear"></i>
+    <pre>ing-gear</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-gear"></i>
+    <pre>\E042</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57410;</i>
+    <pre>&amp;#57410;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-gears"></i>
+    <pre>ing-gears</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-gears"></i>
+    <pre>\E043</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57411;</i>
+    <pre>&amp;#57411;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-github"></i>
+    <pre>ing-github</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-github"></i>
+    <pre>\E044</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57412;</i>
+    <pre>&amp;#57412;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-graduation"></i>
+    <pre>ing-graduation</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-graduation"></i>
+    <pre>\E045</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57413;</i>
+    <pre>&amp;#57413;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-home"></i>
+    <pre>ing-home</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-home"></i>
+    <pre>\E046</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57414;</i>
+    <pre>&amp;#57414;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-identification"></i>
+    <pre>ing-identification</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-identification"></i>
+    <pre>\E047</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57415;</i>
+    <pre>&amp;#57415;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-ingaia-ico"></i>
+    <pre>ing-ingaia-ico</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-ingaia-ico"></i>
+    <pre>\E048</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57416;</i>
+    <pre>&amp;#57416;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-ingaia-logo"></i>
+    <pre>ing-ingaia-logo</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-ingaia-logo"></i>
+    <pre>\E049</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57417;</i>
+    <pre>&amp;#57417;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-key"></i>
+    <pre>ing-key</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-key"></i>
+    <pre>\E04A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57418;</i>
+    <pre>&amp;#57418;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-link"></i>
+    <pre>ing-link</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-link"></i>
+    <pre>\E04B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57419;</i>
+    <pre>&amp;#57419;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-list-alt"></i>
+    <pre>ing-list-alt</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-list-alt"></i>
+    <pre>\E04C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57420;</i>
+    <pre>&amp;#57420;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-list-o"></i>
+    <pre>ing-list-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-list-o"></i>
+    <pre>\E04D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57421;</i>
+    <pre>&amp;#57421;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-list"></i>
+    <pre>ing-list</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-list"></i>
+    <pre>\E04E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57422;</i>
+    <pre>&amp;#57422;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-lock"></i>
+    <pre>ing-lock</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-lock"></i>
+    <pre>\E04F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57423;</i>
+    <pre>&amp;#57423;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-logout"></i>
+    <pre>ing-logout</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-logout"></i>
+    <pre>\E050</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57424;</i>
+    <pre>&amp;#57424;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-metrics"></i>
+    <pre>ing-metrics</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-metrics"></i>
+    <pre>\E051</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57425;</i>
+    <pre>&amp;#57425;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-money-bag"></i>
+    <pre>ing-money-bag</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-money-bag"></i>
+    <pre>\E052</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57426;</i>
+    <pre>&amp;#57426;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-music-single"></i>
+    <pre>ing-music-single</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-music-single"></i>
+    <pre>\E053</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57427;</i>
+    <pre>&amp;#57427;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-music"></i>
+    <pre>ing-music</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-music"></i>
+    <pre>\E054</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57428;</i>
+    <pre>&amp;#57428;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-order"></i>
+    <pre>ing-order</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-order"></i>
+    <pre>\E055</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57429;</i>
+    <pre>&amp;#57429;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-orulo-logo"></i>
+    <pre>ing-orulo-logo</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-orulo-logo"></i>
+    <pre>\E056</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57430;</i>
+    <pre>&amp;#57430;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-phone-square"></i>
+    <pre>ing-phone-square</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-phone-square"></i>
+    <pre>\E057</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57431;</i>
+    <pre>&amp;#57431;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-phone"></i>
+    <pre>ing-phone</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-phone"></i>
+    <pre>\E058</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57432;</i>
+    <pre>&amp;#57432;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-pie-chart"></i>
+    <pre>ing-pie-chart</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-pie-chart"></i>
+    <pre>\E059</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57433;</i>
+    <pre>&amp;#57433;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-play"></i>
+    <pre>ing-play</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-play"></i>
+    <pre>\E05A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57434;</i>
+    <pre>&amp;#57434;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-plus"></i>
+    <pre>ing-plus</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-plus"></i>
+    <pre>\E05B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57435;</i>
+    <pre>&amp;#57435;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-premium"></i>
+    <pre>ing-premium</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-premium"></i>
+    <pre>\E05C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57436;</i>
+    <pre>&amp;#57436;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-print"></i>
+    <pre>ing-print</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-print"></i>
+    <pre>\E05D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57437;</i>
+    <pre>&amp;#57437;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-question-circle"></i>
+    <pre>ing-question-circle</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-question-circle"></i>
+    <pre>\E05E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57438;</i>
+    <pre>&amp;#57438;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-radar-plus"></i>
+    <pre>ing-radar-plus</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-radar-plus"></i>
+    <pre>\E05F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57439;</i>
+    <pre>&amp;#57439;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-reload"></i>
+    <pre>ing-reload</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-reload"></i>
+    <pre>\E060</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57440;</i>
+    <pre>&amp;#57440;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-rocket"></i>
+    <pre>ing-rocket</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-rocket"></i>
+    <pre>\E061</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57441;</i>
+    <pre>&amp;#57441;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-rss"></i>
+    <pre>ing-rss</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-rss"></i>
+    <pre>\E062</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57442;</i>
+    <pre>&amp;#57442;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-sad-o"></i>
+    <pre>ing-sad-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-sad-o"></i>
+    <pre>\E063</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57443;</i>
+    <pre>&amp;#57443;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-sad"></i>
+    <pre>ing-sad</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-sad"></i>
+    <pre>\E064</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57444;</i>
+    <pre>&amp;#57444;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-search"></i>
+    <pre>ing-search</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-search"></i>
+    <pre>\E065</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57445;</i>
+    <pre>&amp;#57445;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-share-01"></i>
+    <pre>ing-share-01</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-share-01"></i>
+    <pre>\E066</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57446;</i>
+    <pre>&amp;#57446;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-shopping-cart"></i>
+    <pre>ing-shopping-cart</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-shopping-cart"></i>
+    <pre>\E067</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57447;</i>
+    <pre>&amp;#57447;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-smile-o"></i>
+    <pre>ing-smile-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-smile-o"></i>
+    <pre>\E068</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57448;</i>
+    <pre>&amp;#57448;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-smile"></i>
+    <pre>ing-smile</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-smile"></i>
+    <pre>\E069</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57449;</i>
+    <pre>&amp;#57449;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-star"></i>
+    <pre>ing-star</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-star"></i>
+    <pre>\E06A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57450;</i>
+    <pre>&amp;#57450;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-suite"></i>
+    <pre>ing-suite</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-suite"></i>
+    <pre>\E06B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57451;</i>
+    <pre>&amp;#57451;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-tag-o"></i>
+    <pre>ing-tag-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-tag-o"></i>
+    <pre>\E06C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57452;</i>
+    <pre>&amp;#57452;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-tag"></i>
+    <pre>ing-tag</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-tag"></i>
+    <pre>\E06D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57453;</i>
+    <pre>&amp;#57453;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-tag2"></i>
+    <pre>ing-tag2</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-tag2"></i>
+    <pre>\E06E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57454;</i>
+    <pre>&amp;#57454;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-th-single"></i>
+    <pre>ing-th-single</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-th-single"></i>
+    <pre>\E06F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57455;</i>
+    <pre>&amp;#57455;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-th"></i>
+    <pre>ing-th</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-th"></i>
+    <pre>\E070</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57456;</i>
+    <pre>&amp;#57456;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-thumb-down-o"></i>
+    <pre>ing-thumb-down-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-thumb-down-o"></i>
+    <pre>\E071</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57457;</i>
+    <pre>&amp;#57457;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-thumb-down"></i>
+    <pre>ing-thumb-down</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-thumb-down"></i>
+    <pre>\E072</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57458;</i>
+    <pre>&amp;#57458;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-thumb-up-o"></i>
+    <pre>ing-thumb-up-o</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-thumb-up-o"></i>
+    <pre>\E073</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57459;</i>
+    <pre>&amp;#57459;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-thumb-up"></i>
+    <pre>ing-thumb-up</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-thumb-up"></i>
+    <pre>\E074</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57460;</i>
+    <pre>&amp;#57460;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-times"></i>
+    <pre>ing-times</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-times"></i>
+    <pre>\E075</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57461;</i>
+    <pre>&amp;#57461;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-trash-user"></i>
+    <pre>ing-trash-user</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-trash-user"></i>
+    <pre>\E076</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57462;</i>
+    <pre>&amp;#57462;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-trash"></i>
+    <pre>ing-trash</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-trash"></i>
+    <pre>\E077</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57463;</i>
+    <pre>&amp;#57463;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-upload"></i>
+    <pre>ing-upload</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-upload"></i>
+    <pre>\E078</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57464;</i>
+    <pre>&amp;#57464;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-usd-circle"></i>
+    <pre>ing-usd-circle</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-usd-circle"></i>
+    <pre>\E079</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57465;</i>
+    <pre>&amp;#57465;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-user-plus"></i>
+    <pre>ing-user-plus</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-user-plus"></i>
+    <pre>\E07A</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57466;</i>
+    <pre>&amp;#57466;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-user"></i>
+    <pre>ing-user</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-user"></i>
+    <pre>\E07B</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57467;</i>
+    <pre>&amp;#57467;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-users"></i>
+    <pre>ing-users</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-users"></i>
+    <pre>\E07C</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57468;</i>
+    <pre>&amp;#57468;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-volume-down"></i>
+    <pre>ing-volume-down</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-volume-down"></i>
+    <pre>\E07D</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57469;</i>
+    <pre>&amp;#57469;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-volume-off"></i>
+    <pre>ing-volume-off</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-volume-off"></i>
+    <pre>\E07E</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57470;</i>
+    <pre>&amp;#57470;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-volume-up"></i>
+    <pre>ing-volume-up</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-volume-up"></i>
+    <pre>\E07F</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57471;</i>
+    <pre>&amp;#57471;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-whatsapp"></i>
+    <pre>ing-whatsapp</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-whatsapp"></i>
+    <pre>\E080</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57472;</i>
+    <pre>&amp;#57472;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-youtube-play"></i>
+    <pre>ing-youtube-play</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-youtube-play"></i>
+    <pre>\E081</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57473;</i>
+    <pre>&amp;#57473;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-youtube-square"></i>
+    <pre>ing-youtube-square</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-youtube-square"></i>
+    <pre>\E082</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57474;</i>
+    <pre>&amp;#57474;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="ing ing-youtube"></i>
+    <pre>ing-youtube</pre>
+</li>
+<li class="hex-demo">
+    <i class="ing ing-youtube"></i>
+    <pre>\E083</pre>
+</li>
+<li class="binary-demo">
+    <i class="ing-binary">&#57475;</i>
+    <pre>&amp;#57475;</pre>
+</li>
+
+</ul>
+
+<script type="text/javascript">
+	function showIconType(type){
+		var classMap = {
+			0: 'class-name',
+			1: 'hex',
+			2: 'binary',
+		};
+
+		document.getElementById('icon-list').className = classMap[type];
+		document.getElementById('icon-demo').className = classMap[type] + ' clearfix';
+
+	}
+</script>
+</body>
+</html>
