@@ -17,5 +17,11 @@ $ bower install ingaia.font.icons
 ## Adicionar mais ícones
 
 1. Copie o arquivo SVG nas pasta SVG.
-2. $ npm install
-3. $ gulp
+
+```console
+$ npm install
+```
+
+```console
+$ gulp
+```
