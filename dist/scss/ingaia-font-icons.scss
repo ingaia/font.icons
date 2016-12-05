@@ -1,15 +1,15 @@
 @font-face {
-	font-family: "ingaia-font-icons-1480961037";
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.eot');
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.eot?#iefix') format('eot'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.woff2') format('woff2'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.woff') format('woff'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.ttf') format('truetype'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.svg#ingaia-font-icons-1480961037') format('svg');
+	font-family: "ingaia-font-icons-1480964315";
+	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1480964315.eot');
+	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1480964315.eot?#iefix') format('eot'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480964315.woff2') format('woff2'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480964315.woff') format('woff'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480964315.ttf') format('truetype'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480964315.svg#ingaia-font-icons-1480964315') format('svg');
 }
 
 @mixin ing-styles {
-	font-family: "ingaia-font-icons-1480961037";
+	font-family: "ingaia-font-icons-1480964315";
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
