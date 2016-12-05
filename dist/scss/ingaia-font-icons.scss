@@ -1,0 +1,806 @@
+@font-face {
+	font-family: "ingaia-font-icons-1480961037";
+	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.eot');
+	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.eot?#iefix') format('eot'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.woff2') format('woff2'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.woff') format('woff'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.ttf') format('truetype'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons-1480961037.svg#ingaia-font-icons-1480961037') format('svg');
+}
+
+@mixin ing-styles {
+	font-family: "ingaia-font-icons-1480961037";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%ing {
+	@include ing-styles;
+}
+
+@function ing-char($filename) {
+	$char: "";
+
+	@if $filename == arrow-circle-up {
+		$char: "\E001";
+	}
+	@if $filename == arrow-down {
+		$char: "\E002";
+	}
+	@if $filename == ban {
+		$char: "\E003";
+	}
+	@if $filename == bar-y {
+		$char: "\E004";
+	}
+	@if $filename == bathroom {
+		$char: "\E005";
+	}
+	@if $filename == bed {
+		$char: "\E006";
+	}
+	@if $filename == box-o {
+		$char: "\E007";
+	}
+	@if $filename == building {
+		$char: "\E008";
+	}
+	@if $filename == bullhorn {
+		$char: "\E009";
+	}
+	@if $filename == calendar-birth {
+		$char: "\E00A";
+	}
+	@if $filename == calendar-car {
+		$char: "\E00B";
+	}
+	@if $filename == calendar-check {
+		$char: "\E00C";
+	}
+	@if $filename == calendar-clear {
+		$char: "\E00D";
+	}
+	@if $filename == calendar-phone {
+		$char: "\E00E";
+	}
+	@if $filename == calendar {
+		$char: "\E00F";
+	}
+	@if $filename == camera-no-image {
+		$char: "\E010";
+	}
+	@if $filename == camera {
+		$char: "\E011";
+	}
+	@if $filename == car {
+		$char: "\E012";
+	}
+	@if $filename == check-circle {
+		$char: "\E013";
+	}
+	@if $filename == check {
+		$char: "\E014";
+	}
+	@if $filename == chevron-down {
+		$char: "\E015";
+	}
+	@if $filename == chevron-left {
+		$char: "\E016";
+	}
+	@if $filename == chevron-light-down {
+		$char: "\E017";
+	}
+	@if $filename == chevron-light-left {
+		$char: "\E018";
+	}
+	@if $filename == chevron-light-right {
+		$char: "\E019";
+	}
+	@if $filename == chevron-light-up {
+		$char: "\E01A";
+	}
+	@if $filename == chevron-right {
+		$char: "\E01B";
+	}
+	@if $filename == chevron-up {
+		$char: "\E01C";
+	}
+	@if $filename == circle-o {
+		$char: "\E01D";
+	}
+	@if $filename == circle {
+		$char: "\E01E";
+	}
+	@if $filename == clip {
+		$char: "\E01F";
+	}
+	@if $filename == clock-3h {
+		$char: "\E020";
+	}
+	@if $filename == clock {
+		$char: "\E021";
+	}
+	@if $filename == close {
+		$char: "\E022";
+	}
+	@if $filename == columns-alt {
+		$char: "\E023";
+	}
+	@if $filename == comment-idea {
+		$char: "\E024";
+	}
+	@if $filename == comment {
+		$char: "\E025";
+	}
+	@if $filename == comments-rounded {
+		$char: "\E026";
+	}
+	@if $filename == comments {
+		$char: "\E027";
+	}
+	@if $filename == desktop {
+		$char: "\E028";
+	}
+	@if $filename == double-right {
+		$char: "\E029";
+	}
+	@if $filename == download {
+		$char: "\E02A";
+	}
+	@if $filename == edit {
+		$char: "\E02B";
+	}
+	@if $filename == envelope {
+		$char: "\E02C";
+	}
+	@if $filename == exchange {
+		$char: "\E02D";
+	}
+	@if $filename == exclamation-circle {
+		$char: "\E02E";
+	}
+	@if $filename == exclamation-triangle {
+		$char: "\E02F";
+	}
+	@if $filename == facebook-square {
+		$char: "\E030";
+	}
+	@if $filename == facebook {
+		$char: "\E031";
+	}
+	@if $filename == file-excel {
+		$char: "\E032";
+	}
+	@if $filename == file-img {
+		$char: "\E033";
+	}
+	@if $filename == file-pdf-o {
+		$char: "\E034";
+	}
+	@if $filename == file-text {
+		$char: "\E035";
+	}
+	@if $filename == file-word-o {
+		$char: "\E036";
+	}
+	@if $filename == file-word {
+		$char: "\E037";
+	}
+	@if $filename == file {
+		$char: "\E038";
+	}
+	@if $filename == files {
+		$char: "\E039";
+	}
+	@if $filename == flag-o {
+		$char: "\E03A";
+	}
+	@if $filename == flag {
+		$char: "\E03B";
+	}
+	@if $filename == gavel {
+		$char: "\E03C";
+	}
+	@if $filename == gear {
+		$char: "\E03D";
+	}
+	@if $filename == gears {
+		$char: "\E03E";
+	}
+	@if $filename == github {
+		$char: "\E03F";
+	}
+	@if $filename == graduation {
+		$char: "\E040";
+	}
+	@if $filename == home {
+		$char: "\E041";
+	}
+	@if $filename == identification {
+		$char: "\E042";
+	}
+	@if $filename == ingaia-ico {
+		$char: "\E043";
+	}
+	@if $filename == ingaia-logo {
+		$char: "\E044";
+	}
+	@if $filename == key {
+		$char: "\E045";
+	}
+	@if $filename == link {
+		$char: "\E046";
+	}
+	@if $filename == list-alt {
+		$char: "\E047";
+	}
+	@if $filename == list-o {
+		$char: "\E048";
+	}
+	@if $filename == list {
+		$char: "\E049";
+	}
+	@if $filename == lock {
+		$char: "\E04A";
+	}
+	@if $filename == logout {
+		$char: "\E04B";
+	}
+	@if $filename == metrics {
+		$char: "\E04C";
+	}
+	@if $filename == money-bag {
+		$char: "\E04D";
+	}
+	@if $filename == music-single {
+		$char: "\E04E";
+	}
+	@if $filename == music {
+		$char: "\E04F";
+	}
+	@if $filename == order {
+		$char: "\E050";
+	}
+	@if $filename == orulo-logo {
+		$char: "\E051";
+	}
+	@if $filename == phone-square {
+		$char: "\E052";
+	}
+	@if $filename == phone {
+		$char: "\E053";
+	}
+	@if $filename == pie-chart {
+		$char: "\E054";
+	}
+	@if $filename == play {
+		$char: "\E055";
+	}
+	@if $filename == plus {
+		$char: "\E056";
+	}
+	@if $filename == premium {
+		$char: "\E057";
+	}
+	@if $filename == print {
+		$char: "\E058";
+	}
+	@if $filename == question-circle {
+		$char: "\E059";
+	}
+	@if $filename == radar-plus {
+		$char: "\E05A";
+	}
+	@if $filename == reload {
+		$char: "\E05B";
+	}
+	@if $filename == rocket {
+		$char: "\E05C";
+	}
+	@if $filename == rss {
+		$char: "\E05D";
+	}
+	@if $filename == sad-o {
+		$char: "\E05E";
+	}
+	@if $filename == sad {
+		$char: "\E05F";
+	}
+	@if $filename == search {
+		$char: "\E060";
+	}
+	@if $filename == share-01 {
+		$char: "\E061";
+	}
+	@if $filename == shopping-cart {
+		$char: "\E062";
+	}
+	@if $filename == smile-o {
+		$char: "\E063";
+	}
+	@if $filename == smile {
+		$char: "\E064";
+	}
+	@if $filename == star {
+		$char: "\E065";
+	}
+	@if $filename == suite {
+		$char: "\E066";
+	}
+	@if $filename == tag-o {
+		$char: "\E067";
+	}
+	@if $filename == tag {
+		$char: "\E068";
+	}
+	@if $filename == tag2 {
+		$char: "\E069";
+	}
+	@if $filename == th-single {
+		$char: "\E06A";
+	}
+	@if $filename == th {
+		$char: "\E06B";
+	}
+	@if $filename == thumb-down-o {
+		$char: "\E06C";
+	}
+	@if $filename == thumb-down {
+		$char: "\E06D";
+	}
+	@if $filename == thumb-up-o {
+		$char: "\E06E";
+	}
+	@if $filename == thumb-up {
+		$char: "\E06F";
+	}
+	@if $filename == times {
+		$char: "\E070";
+	}
+	@if $filename == trash-user {
+		$char: "\E071";
+	}
+	@if $filename == trash {
+		$char: "\E072";
+	}
+	@if $filename == upload {
+		$char: "\E073";
+	}
+	@if $filename == usd-circle {
+		$char: "\E074";
+	}
+	@if $filename == user-close {
+		$char: "\E075";
+	}
+	@if $filename == user-plus {
+		$char: "\E076";
+	}
+	@if $filename == user {
+		$char: "\E077";
+	}
+	@if $filename == users {
+		$char: "\E078";
+	}
+	@if $filename == volume-down {
+		$char: "\E079";
+	}
+	@if $filename == volume-off {
+		$char: "\E07A";
+	}
+	@if $filename == volume-up {
+		$char: "\E07B";
+	}
+	@if $filename == whatsapp {
+		$char: "\E07C";
+	}
+	@if $filename == youtube-play {
+		$char: "\E07D";
+	}
+	@if $filename == youtube-square {
+		$char: "\E07E";
+	}
+	@if $filename == youtube {
+		$char: "\E07F";
+	}
+
+	@return $char;
+}
+
+@mixin ing($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %ing;
+		} @else {
+			@include ing-styles;
+		}
+		content: ing-char($filename);
+	}
+}
+
+.ing-arrow-circle-up {
+	@include ing(arrow-circle-up);
+}
+.ing-arrow-down {
+	@include ing(arrow-down);
+}
+.ing-ban {
+	@include ing(ban);
+}
+.ing-bar-y {
+	@include ing(bar-y);
+}
+.ing-bathroom {
+	@include ing(bathroom);
+}
+.ing-bed {
+	@include ing(bed);
+}
+.ing-box-o {
+	@include ing(box-o);
+}
+.ing-building {
+	@include ing(building);
+}
+.ing-bullhorn {
+	@include ing(bullhorn);
+}
+.ing-calendar-birth {
+	@include ing(calendar-birth);
+}
+.ing-calendar-car {
+	@include ing(calendar-car);
+}
+.ing-calendar-check {
+	@include ing(calendar-check);
+}
+.ing-calendar-clear {
+	@include ing(calendar-clear);
+}
+.ing-calendar-phone {
+	@include ing(calendar-phone);
+}
+.ing-calendar {
+	@include ing(calendar);
+}
+.ing-camera-no-image {
+	@include ing(camera-no-image);
+}
+.ing-camera {
+	@include ing(camera);
+}
+.ing-car {
+	@include ing(car);
+}
+.ing-check-circle {
+	@include ing(check-circle);
+}
+.ing-check {
+	@include ing(check);
+}
+.ing-chevron-down {
+	@include ing(chevron-down);
+}
+.ing-chevron-left {
+	@include ing(chevron-left);
+}
+.ing-chevron-light-down {
+	@include ing(chevron-light-down);
+}
+.ing-chevron-light-left {
+	@include ing(chevron-light-left);
+}
+.ing-chevron-light-right {
+	@include ing(chevron-light-right);
+}
+.ing-chevron-light-up {
+	@include ing(chevron-light-up);
+}
+.ing-chevron-right {
+	@include ing(chevron-right);
+}
+.ing-chevron-up {
+	@include ing(chevron-up);
+}
+.ing-circle-o {
+	@include ing(circle-o);
+}
+.ing-circle {
+	@include ing(circle);
+}
+.ing-clip {
+	@include ing(clip);
+}
+.ing-clock-3h {
+	@include ing(clock-3h);
+}
+.ing-clock {
+	@include ing(clock);
+}
+.ing-close {
+	@include ing(close);
+}
+.ing-columns-alt {
+	@include ing(columns-alt);
+}
+.ing-comment-idea {
+	@include ing(comment-idea);
+}
+.ing-comment {
+	@include ing(comment);
+}
+.ing-comments-rounded {
+	@include ing(comments-rounded);
+}
+.ing-comments {
+	@include ing(comments);
+}
+.ing-desktop {
+	@include ing(desktop);
+}
+.ing-double-right {
+	@include ing(double-right);
+}
+.ing-download {
+	@include ing(download);
+}
+.ing-edit {
+	@include ing(edit);
+}
+.ing-envelope {
+	@include ing(envelope);
+}
+.ing-exchange {
+	@include ing(exchange);
+}
+.ing-exclamation-circle {
+	@include ing(exclamation-circle);
+}
+.ing-exclamation-triangle {
+	@include ing(exclamation-triangle);
+}
+.ing-facebook-square {
+	@include ing(facebook-square);
+}
+.ing-facebook {
+	@include ing(facebook);
+}
+.ing-file-excel {
+	@include ing(file-excel);
+}
+.ing-file-img {
+	@include ing(file-img);
+}
+.ing-file-pdf-o {
+	@include ing(file-pdf-o);
+}
+.ing-file-text {
+	@include ing(file-text);
+}
+.ing-file-word-o {
+	@include ing(file-word-o);
+}
+.ing-file-word {
+	@include ing(file-word);
+}
+.ing-file {
+	@include ing(file);
+}
+.ing-files {
+	@include ing(files);
+}
+.ing-flag-o {
+	@include ing(flag-o);
+}
+.ing-flag {
+	@include ing(flag);
+}
+.ing-gavel {
+	@include ing(gavel);
+}
+.ing-gear {
+	@include ing(gear);
+}
+.ing-gears {
+	@include ing(gears);
+}
+.ing-github {
+	@include ing(github);
+}
+.ing-graduation {
+	@include ing(graduation);
+}
+.ing-home {
+	@include ing(home);
+}
+.ing-identification {
+	@include ing(identification);
+}
+.ing-ingaia-ico {
+	@include ing(ingaia-ico);
+}
+.ing-ingaia-logo {
+	@include ing(ingaia-logo);
+}
+.ing-key {
+	@include ing(key);
+}
+.ing-link {
+	@include ing(link);
+}
+.ing-list-alt {
+	@include ing(list-alt);
+}
+.ing-list-o {
+	@include ing(list-o);
+}
+.ing-list {
+	@include ing(list);
+}
+.ing-lock {
+	@include ing(lock);
+}
+.ing-logout {
+	@include ing(logout);
+}
+.ing-metrics {
+	@include ing(metrics);
+}
+.ing-money-bag {
+	@include ing(money-bag);
+}
+.ing-music-single {
+	@include ing(music-single);
+}
+.ing-music {
+	@include ing(music);
+}
+.ing-order {
+	@include ing(order);
+}
+.ing-orulo-logo {
+	@include ing(orulo-logo);
+}
+.ing-phone-square {
+	@include ing(phone-square);
+}
+.ing-phone {
+	@include ing(phone);
+}
+.ing-pie-chart {
+	@include ing(pie-chart);
+}
+.ing-play {
+	@include ing(play);
+}
+.ing-plus {
+	@include ing(plus);
+}
+.ing-premium {
+	@include ing(premium);
+}
+.ing-print {
+	@include ing(print);
+}
+.ing-question-circle {
+	@include ing(question-circle);
+}
+.ing-radar-plus {
+	@include ing(radar-plus);
+}
+.ing-reload {
+	@include ing(reload);
+}
+.ing-rocket {
+	@include ing(rocket);
+}
+.ing-rss {
+	@include ing(rss);
+}
+.ing-sad-o {
+	@include ing(sad-o);
+}
+.ing-sad {
+	@include ing(sad);
+}
+.ing-search {
+	@include ing(search);
+}
+.ing-share-01 {
+	@include ing(share-01);
+}
+.ing-shopping-cart {
+	@include ing(shopping-cart);
+}
+.ing-smile-o {
+	@include ing(smile-o);
+}
+.ing-smile {
+	@include ing(smile);
+}
+.ing-star {
+	@include ing(star);
+}
+.ing-suite {
+	@include ing(suite);
+}
+.ing-tag-o {
+	@include ing(tag-o);
+}
+.ing-tag {
+	@include ing(tag);
+}
+.ing-tag2 {
+	@include ing(tag2);
+}
+.ing-th-single {
+	@include ing(th-single);
+}
+.ing-th {
+	@include ing(th);
+}
+.ing-thumb-down-o {
+	@include ing(thumb-down-o);
+}
+.ing-thumb-down {
+	@include ing(thumb-down);
+}
+.ing-thumb-up-o {
+	@include ing(thumb-up-o);
+}
+.ing-thumb-up {
+	@include ing(thumb-up);
+}
+.ing-times {
+	@include ing(times);
+}
+.ing-trash-user {
+	@include ing(trash-user);
+}
+.ing-trash {
+	@include ing(trash);
+}
+.ing-upload {
+	@include ing(upload);
+}
+.ing-usd-circle {
+	@include ing(usd-circle);
+}
+.ing-user-close {
+	@include ing(user-close);
+}
+.ing-user-plus {
+	@include ing(user-plus);
+}
+.ing-user {
+	@include ing(user);
+}
+.ing-users {
+	@include ing(users);
+}
+.ing-volume-down {
+	@include ing(volume-down);
+}
+.ing-volume-off {
+	@include ing(volume-off);
+}
+.ing-volume-up {
+	@include ing(volume-up);
+}
+.ing-whatsapp {
+	@include ing(whatsapp);
+}
+.ing-youtube-play {
+	@include ing(youtube-play);
+}
+.ing-youtube-square {
+	@include ing(youtube-square);
+}
+.ing-youtube {
+	@include ing(youtube);
+}
