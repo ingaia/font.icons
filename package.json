@@ -17,7 +17,8 @@
     "gulp-fontcustom": "^0.1.2",
     "gulp-iconfont": "^8.0.1",
     "gulp-iconfont-css": "^2.1.0",
-    "gulp-iconfont-template": "0.0.3"
+    "gulp-iconfont-template": "0.0.3",
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "build": "./node_modules/.bin/gulp"

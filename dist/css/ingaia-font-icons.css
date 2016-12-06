@@ -1,15 +1,15 @@
 @font-face {
-	font-family: "ingaia-font-icons-1480964315";
-	src: url('../fonts/ingaia-font-icons-1480964315.eot');
-	src: url('../fonts/ingaia-font-icons-1480964315.eot?#iefix') format('eot'),
-		url('../fonts/ingaia-font-icons-1480964315.woff2') format('woff2'),
-		url('../fonts/ingaia-font-icons-1480964315.woff') format('woff'),
-		url('../fonts/ingaia-font-icons-1480964315.ttf') format('truetype'),
-		url('../fonts/ingaia-font-icons-1480964315.svg#ingaia-font-icons-1480964315') format('svg');
+	font-family: "ingaia-font-icons-1481041243";
+	src: url('../fonts/ingaia-font-icons-1481041243.eot');
+	src: url('../fonts/ingaia-font-icons-1481041243.eot?#iefix') format('eot'),
+		url('../fonts/ingaia-font-icons-1481041243.woff2') format('woff2'),
+		url('../fonts/ingaia-font-icons-1481041243.woff') format('woff'),
+		url('../fonts/ingaia-font-icons-1481041243.ttf') format('truetype'),
+		url('../fonts/ingaia-font-icons-1481041243.svg#ingaia-font-icons-1481041243') format('svg');
 }
 
 .ing:before {
-	font-family: "ingaia-font-icons-1480964315";
+	font-family: "ingaia-font-icons-1481041243";
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	font-style: normal;

@@ -2,15 +2,17 @@ var gulp = require('gulp');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var iconfontTemplate = require('gulp-iconfont-template');
+var runSequence = require('run-sequence');
 var del = require('del');
 var runTimestamp = Math.round(Date.now()/1000);
-
 var brand = 'ingaia-font-icons';
 var fontName = brand + '-' + runTimestamp;
 var cssClass = 'ing';
 
-gulp.task('clean', function(){
-	return del.sync('dist/');
+
+gulp.task('clean', function() {
+    // Return the Promise from del() 
+    return del('dist/');
 });
 
 gulp.task('iconfont-css', function(){
@@ -85,4 +87,8 @@ gulp.task('fonts', function(){
 
 });
 
-gulp.task('default', ['clean', 'iconfont-css', 'iconfont-sass', 'template-html']);
+gulp.task('default', function(callback) {
+  runSequence('clean',
+              ['iconfont-css', 'iconfont-sass', 'template-html'],              
+              callback);
+});
