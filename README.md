@@ -5,13 +5,13 @@
 ### npm
 
 ```console
-$ npm install ingaia.font.icons
+$ npm install ingaia.font.icons --save
 ```
 
 ### Bower
 
 ```console
-$ bower install ingaia.font.icons
+$ bower install ingaia.font.icons --save
 ```
 
 ## Adicionar mais ícones
