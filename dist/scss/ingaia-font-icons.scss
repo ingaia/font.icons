@@ -1,15 +1,15 @@
 @font-face {
-	font-family: "ingaia-font-icons-1481041243";
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1481041243.eot');
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons-1481041243.eot?#iefix') format('eot'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1481041243.woff2') format('woff2'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1481041243.woff') format('woff'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1481041243.ttf') format('truetype'),
-		url('#{$ingaia-icons-font-path}ingaia-font-icons-1481041243.svg#ingaia-font-icons-1481041243') format('svg');
+	font-family: "ingaia-font-icons";
+	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.eot');
+	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.eot?#iefix') format('eot'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.woff2') format('woff2'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.woff') format('woff'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.ttf') format('truetype'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.svg#ingaia-font-icons') format('svg');
 }
 
 @mixin ing-styles {
-	font-family: "ingaia-font-icons-1481041243";
+	font-family: "ingaia-font-icons";
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
@@ -252,161 +252,164 @@
 	@if $filename == logout {
 		$char: "\E04B";
 	}
-	@if $filename == metrics {
+	@if $filename == map-maker {
 		$char: "\E04C";
 	}
-	@if $filename == money-bag {
+	@if $filename == metrics {
 		$char: "\E04D";
 	}
-	@if $filename == music-single {
+	@if $filename == money-bag {
 		$char: "\E04E";
 	}
-	@if $filename == music {
+	@if $filename == music-single {
 		$char: "\E04F";
 	}
-	@if $filename == order {
+	@if $filename == music {
 		$char: "\E050";
 	}
-	@if $filename == orulo-logo {
+	@if $filename == order {
 		$char: "\E051";
 	}
-	@if $filename == phone-square {
+	@if $filename == orulo-logo {
 		$char: "\E052";
 	}
-	@if $filename == phone {
+	@if $filename == phone-square {
 		$char: "\E053";
 	}
-	@if $filename == pie-chart {
+	@if $filename == phone {
 		$char: "\E054";
 	}
-	@if $filename == play {
+	@if $filename == pie-chart {
 		$char: "\E055";
 	}
-	@if $filename == plus {
+	@if $filename == play {
 		$char: "\E056";
 	}
-	@if $filename == premium {
+	@if $filename == plus {
 		$char: "\E057";
 	}
-	@if $filename == print {
+	@if $filename == premium {
 		$char: "\E058";
 	}
-	@if $filename == question-circle {
+	@if $filename == print {
 		$char: "\E059";
 	}
-	@if $filename == radar-plus {
+	@if $filename == question-circle {
 		$char: "\E05A";
 	}
-	@if $filename == reload {
+	@if $filename == radar-plus {
 		$char: "\E05B";
 	}
-	@if $filename == rocket {
+	@if $filename == reload {
 		$char: "\E05C";
 	}
-	@if $filename == rss {
+	@if $filename == rocket {
 		$char: "\E05D";
 	}
-	@if $filename == sad-o {
+	@if $filename == rss {
 		$char: "\E05E";
 	}
-	@if $filename == sad {
+	@if $filename == sad-o {
 		$char: "\E05F";
 	}
-	@if $filename == search {
+	@if $filename == sad {
 		$char: "\E060";
 	}
-	@if $filename == share-01 {
+	@if $filename == search {
 		$char: "\E061";
 	}
-	@if $filename == shopping-cart {
+	@if $filename == share-01 {
 		$char: "\E062";
 	}
-	@if $filename == smile-o {
+	@if $filename == shopping-cart {
 		$char: "\E063";
 	}
-	@if $filename == smile {
+	@if $filename == smile-o {
 		$char: "\E064";
 	}
-	@if $filename == star {
+	@if $filename == smile {
 		$char: "\E065";
 	}
-	@if $filename == suite {
+	@if $filename == star {
 		$char: "\E066";
 	}
-	@if $filename == tag-o {
+	@if $filename == suite {
 		$char: "\E067";
 	}
-	@if $filename == tag {
+	@if $filename == tag-o {
 		$char: "\E068";
 	}
-	@if $filename == tag2 {
+	@if $filename == tag {
 		$char: "\E069";
 	}
-	@if $filename == th-single {
+	@if $filename == tag2 {
 		$char: "\E06A";
 	}
-	@if $filename == th {
+	@if $filename == th-single {
 		$char: "\E06B";
 	}
-	@if $filename == thumb-down-o {
+	@if $filename == th {
 		$char: "\E06C";
 	}
-	@if $filename == thumb-down {
+	@if $filename == thumb-down-o {
 		$char: "\E06D";
 	}
-	@if $filename == thumb-up-o {
+	@if $filename == thumb-down {
 		$char: "\E06E";
 	}
-	@if $filename == thumb-up {
+	@if $filename == thumb-up-o {
 		$char: "\E06F";
 	}
-	@if $filename == times {
+	@if $filename == thumb-up {
 		$char: "\E070";
 	}
-	@if $filename == trash-user {
+	@if $filename == times {
 		$char: "\E071";
 	}
-	@if $filename == trash {
+	@if $filename == trash-user {
 		$char: "\E072";
 	}
-	@if $filename == upload {
+	@if $filename == trash {
 		$char: "\E073";
 	}
-	@if $filename == usd-circle {
+	@if $filename == upload {
 		$char: "\E074";
 	}
-	@if $filename == user-close {
+	@if $filename == usd-circle {
 		$char: "\E075";
 	}
-	@if $filename == user-plus {
+	@if $filename == user-close {
 		$char: "\E076";
 	}
-	@if $filename == user {
+	@if $filename == user-plus {
 		$char: "\E077";
 	}
-	@if $filename == users {
+	@if $filename == user {
 		$char: "\E078";
 	}
-	@if $filename == volume-down {
+	@if $filename == users {
 		$char: "\E079";
 	}
-	@if $filename == volume-off {
+	@if $filename == volume-down {
 		$char: "\E07A";
 	}
-	@if $filename == volume-up {
+	@if $filename == volume-off {
 		$char: "\E07B";
 	}
-	@if $filename == whatsapp {
+	@if $filename == volume-up {
 		$char: "\E07C";
 	}
-	@if $filename == youtube-play {
+	@if $filename == whatsapp {
 		$char: "\E07D";
 	}
-	@if $filename == youtube-square {
+	@if $filename == youtube-play {
 		$char: "\E07E";
 	}
-	@if $filename == youtube {
+	@if $filename == youtube-square {
 		$char: "\E07F";
+	}
+	@if $filename == youtube {
+		$char: "\E080";
 	}
 
 	@return $char;
@@ -647,6 +650,9 @@
 }
 .ing-logout {
 	@include ing(logout);
+}
+.ing-map-maker {
+	@include ing(map-maker);
 }
 .ing-metrics {
 	@include ing(metrics);

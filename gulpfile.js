@@ -6,7 +6,7 @@ var runSequence = require('run-sequence');
 var del = require('del');
 var runTimestamp = Math.round(Date.now()/1000);
 var brand = 'ingaia-font-icons';
-var fontName = brand + '-' + runTimestamp;
+var fontName = brand;
 var cssClass = 'ing';
 
 
@@ -48,7 +48,7 @@ gulp.task('iconfont-sass', function(){
 	  fontName: fontName,
 	  normalize:true,
 	  formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
-	  timestamp: runTimestamp
+	  //timestamp: runTimestamp
 	 }))
 	.pipe(gulp.dest('dist/fonts'));
 
@@ -68,7 +68,7 @@ gulp.task('template-html', function(){
 	  fontName: fontName,
 	  normalize:true,
 	  formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
-	  timestamp: runTimestamp
+	  //timestamp: runTimestamp
 	 }))
 	.pipe(gulp.dest('dist/fonts'));
 
@@ -81,7 +81,7 @@ gulp.task('fonts', function(){
 	  fontName: fontName,
 	  normalize:true,
 	  formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
-	  timestamp: runTimestamp
+	  //timestamp: runTimestamp
 	 }))
 	.pipe(gulp.dest('dist/fonts'));
 
