@@ -49,7 +49,7 @@
 	content: "\E007";
 }
 
-.ing-building:before {
+.ing-0008building:before {
 	content: "\E008";
 }
 
@@ -57,35 +57,35 @@
 	content: "\E009";
 }
 
-.ing-calendar-birth:before {
+.ing-calendar:before {
 	content: "\E00A";
 }
 
-.ing-calendar-car:before {
+.ing-calendar-birth:before {
 	content: "\E00B";
 }
 
-.ing-calendar-check:before {
+.ing-calendar-car:before {
 	content: "\E00C";
 }
 
-.ing-calendar-clear:before {
+.ing-calendar-check:before {
 	content: "\E00D";
 }
 
-.ing-calendar-phone:before {
+.ing-calendar-clear:before {
 	content: "\E00E";
 }
 
-.ing-calendar:before {
+.ing-calendar-phone:before {
 	content: "\E00F";
 }
 
-.ing-camera-no-image:before {
+.ing-camera:before {
 	content: "\E010";
 }
 
-.ing-camera:before {
+.ing-camera-no-image:before {
 	content: "\E011";
 }
 
@@ -93,11 +93,11 @@
 	content: "\E012";
 }
 
-.ing-check-circle:before {
+.ing-check:before {
 	content: "\E013";
 }
 
-.ing-check:before {
+.ing-check-circle:before {
 	content: "\E014";
 }
 
@@ -133,11 +133,11 @@
 	content: "\E01C";
 }
 
-.ing-circle-o:before {
+.ing-circle:before {
 	content: "\E01D";
 }
 
-.ing-circle:before {
+.ing-circle-o:before {
 	content: "\E01E";
 }
 
@@ -145,11 +145,11 @@
 	content: "\E01F";
 }
 
-.ing-clock-3h:before {
+.ing-clock:before {
 	content: "\E020";
 }
 
-.ing-clock:before {
+.ing-clock-3h:before {
 	content: "\E021";
 }
 
@@ -161,19 +161,19 @@
 	content: "\E023";
 }
 
-.ing-comment-idea:before {
+.ing-comment:before {
 	content: "\E024";
 }
 
-.ing-comment:before {
+.ing-comment-idea:before {
 	content: "\E025";
 }
 
-.ing-comments-rounded:before {
+.ing-comments:before {
 	content: "\E026";
 }
 
-.ing-comments:before {
+.ing-comments-rounded:before {
 	content: "\E027";
 }
 
@@ -209,51 +209,51 @@
 	content: "\E02F";
 }
 
-.ing-facebook-square:before {
+.ing-facebook:before {
 	content: "\E030";
 }
 
-.ing-facebook:before {
+.ing-facebook-square:before {
 	content: "\E031";
 }
 
-.ing-file-excel:before {
+.ing-file:before {
 	content: "\E032";
 }
 
-.ing-file-img:before {
+.ing-file-excel:before {
 	content: "\E033";
 }
 
-.ing-file-pdf-o:before {
+.ing-file-img:before {
 	content: "\E034";
 }
 
-.ing-file-text:before {
+.ing-file-pdf-o:before {
 	content: "\E035";
 }
 
-.ing-file-word-o:before {
+.ing-files:before {
 	content: "\E036";
 }
 
-.ing-file-word:before {
+.ing-file-text:before {
 	content: "\E037";
 }
 
-.ing-file:before {
+.ing-file-word:before {
 	content: "\E038";
 }
 
-.ing-files:before {
+.ing-file-word-o:before {
 	content: "\E039";
 }
 
-.ing-flag-o:before {
+.ing-flag:before {
 	content: "\E03A";
 }
 
-.ing-flag:before {
+.ing-flag-o:before {
 	content: "\E03B";
 }
 
@@ -301,15 +301,15 @@
 	content: "\E046";
 }
 
-.ing-list-alt:before {
+.ing-list:before {
 	content: "\E047";
 }
 
-.ing-list-o:before {
+.ing-list-alt:before {
 	content: "\E048";
 }
 
-.ing-list:before {
+.ing-list-o:before {
 	content: "\E049";
 }
 
@@ -333,11 +333,11 @@
 	content: "\E04E";
 }
 
-.ing-music-single:before {
+.ing-music:before {
 	content: "\E04F";
 }
 
-.ing-music:before {
+.ing-music-single:before {
 	content: "\E050";
 }
 
@@ -349,11 +349,11 @@
 	content: "\E052";
 }
 
-.ing-phone-square:before {
+.ing-phone:before {
 	content: "\E053";
 }
 
-.ing-phone:before {
+.ing-phone-square:before {
 	content: "\E054";
 }
 
@@ -397,11 +397,11 @@
 	content: "\E05E";
 }
 
-.ing-sad-o:before {
+.ing-sad:before {
 	content: "\E05F";
 }
 
-.ing-sad:before {
+.ing-sad-o:before {
 	content: "\E060";
 }
 
@@ -417,11 +417,11 @@
 	content: "\E063";
 }
 
-.ing-smile-o:before {
+.ing-smile:before {
 	content: "\E064";
 }
 
-.ing-smile:before {
+.ing-smile-o:before {
 	content: "\E065";
 }
 
@@ -433,39 +433,39 @@
 	content: "\E067";
 }
 
-.ing-tag-o:before {
+.ing-tag:before {
 	content: "\E068";
 }
 
-.ing-tag:before {
+.ing-tag2:before {
 	content: "\E069";
 }
 
-.ing-tag2:before {
+.ing-tag-o:before {
 	content: "\E06A";
 }
 
-.ing-th-single:before {
+.ing-th:before {
 	content: "\E06B";
 }
 
-.ing-th:before {
+.ing-th-single:before {
 	content: "\E06C";
 }
 
-.ing-thumb-down-o:before {
+.ing-thumb-down:before {
 	content: "\E06D";
 }
 
-.ing-thumb-down:before {
+.ing-thumb-down-o:before {
 	content: "\E06E";
 }
 
-.ing-thumb-up-o:before {
+.ing-thumb-up:before {
 	content: "\E06F";
 }
 
-.ing-thumb-up:before {
+.ing-thumb-up-o:before {
 	content: "\E070";
 }
 
@@ -473,11 +473,11 @@
 	content: "\E071";
 }
 
-.ing-trash-user:before {
+.ing-trash:before {
 	content: "\E072";
 }
 
-.ing-trash:before {
+.ing-trash-user:before {
 	content: "\E073";
 }
 
@@ -489,15 +489,15 @@
 	content: "\E075";
 }
 
-.ing-user-close:before {
+.ing-user:before {
 	content: "\E076";
 }
 
-.ing-user-plus:before {
+.ing-user-close:before {
 	content: "\E077";
 }
 
-.ing-user:before {
+.ing-user-plus:before {
 	content: "\E078";
 }
 
@@ -521,14 +521,14 @@
 	content: "\E07D";
 }
 
-.ing-youtube-play:before {
+.ing-youtube:before {
 	content: "\E07E";
 }
 
-.ing-youtube-square:before {
+.ing-youtube-play:before {
 	content: "\E07F";
 }
 
-.ing-youtube:before {
+.ing-youtube-square:before {
 	content: "\E080";
 }

@@ -48,43 +48,43 @@
 	@if $filename == box-o {
 		$char: "\E007";
 	}
-	@if $filename == building {
+	@if $filename == 0008building {
 		$char: "\E008";
 	}
 	@if $filename == bullhorn {
 		$char: "\E009";
 	}
-	@if $filename == calendar-birth {
+	@if $filename == calendar {
 		$char: "\E00A";
 	}
-	@if $filename == calendar-car {
+	@if $filename == calendar-birth {
 		$char: "\E00B";
 	}
-	@if $filename == calendar-check {
+	@if $filename == calendar-car {
 		$char: "\E00C";
 	}
-	@if $filename == calendar-clear {
+	@if $filename == calendar-check {
 		$char: "\E00D";
 	}
-	@if $filename == calendar-phone {
+	@if $filename == calendar-clear {
 		$char: "\E00E";
 	}
-	@if $filename == calendar {
+	@if $filename == calendar-phone {
 		$char: "\E00F";
 	}
-	@if $filename == camera-no-image {
+	@if $filename == camera {
 		$char: "\E010";
 	}
-	@if $filename == camera {
+	@if $filename == camera-no-image {
 		$char: "\E011";
 	}
 	@if $filename == car {
 		$char: "\E012";
 	}
-	@if $filename == check-circle {
+	@if $filename == check {
 		$char: "\E013";
 	}
-	@if $filename == check {
+	@if $filename == check-circle {
 		$char: "\E014";
 	}
 	@if $filename == chevron-down {
@@ -111,19 +111,19 @@
 	@if $filename == chevron-up {
 		$char: "\E01C";
 	}
-	@if $filename == circle-o {
+	@if $filename == circle {
 		$char: "\E01D";
 	}
-	@if $filename == circle {
+	@if $filename == circle-o {
 		$char: "\E01E";
 	}
 	@if $filename == clip {
 		$char: "\E01F";
 	}
-	@if $filename == clock-3h {
+	@if $filename == clock {
 		$char: "\E020";
 	}
-	@if $filename == clock {
+	@if $filename == clock-3h {
 		$char: "\E021";
 	}
 	@if $filename == close {
@@ -132,16 +132,16 @@
 	@if $filename == columns-alt {
 		$char: "\E023";
 	}
-	@if $filename == comment-idea {
+	@if $filename == comment {
 		$char: "\E024";
 	}
-	@if $filename == comment {
+	@if $filename == comment-idea {
 		$char: "\E025";
 	}
-	@if $filename == comments-rounded {
+	@if $filename == comments {
 		$char: "\E026";
 	}
-	@if $filename == comments {
+	@if $filename == comments-rounded {
 		$char: "\E027";
 	}
 	@if $filename == desktop {
@@ -168,40 +168,40 @@
 	@if $filename == exclamation-triangle {
 		$char: "\E02F";
 	}
-	@if $filename == facebook-square {
+	@if $filename == facebook {
 		$char: "\E030";
 	}
-	@if $filename == facebook {
+	@if $filename == facebook-square {
 		$char: "\E031";
 	}
-	@if $filename == file-excel {
+	@if $filename == file {
 		$char: "\E032";
 	}
-	@if $filename == file-img {
+	@if $filename == file-excel {
 		$char: "\E033";
 	}
-	@if $filename == file-pdf-o {
+	@if $filename == file-img {
 		$char: "\E034";
 	}
-	@if $filename == file-text {
+	@if $filename == file-pdf-o {
 		$char: "\E035";
 	}
-	@if $filename == file-word-o {
+	@if $filename == files {
 		$char: "\E036";
 	}
-	@if $filename == file-word {
+	@if $filename == file-text {
 		$char: "\E037";
 	}
-	@if $filename == file {
+	@if $filename == file-word {
 		$char: "\E038";
 	}
-	@if $filename == files {
+	@if $filename == file-word-o {
 		$char: "\E039";
 	}
-	@if $filename == flag-o {
+	@if $filename == flag {
 		$char: "\E03A";
 	}
-	@if $filename == flag {
+	@if $filename == flag-o {
 		$char: "\E03B";
 	}
 	@if $filename == gavel {
@@ -237,13 +237,13 @@
 	@if $filename == link {
 		$char: "\E046";
 	}
-	@if $filename == list-alt {
+	@if $filename == list {
 		$char: "\E047";
 	}
-	@if $filename == list-o {
+	@if $filename == list-alt {
 		$char: "\E048";
 	}
-	@if $filename == list {
+	@if $filename == list-o {
 		$char: "\E049";
 	}
 	@if $filename == lock {
@@ -261,10 +261,10 @@
 	@if $filename == money-bag {
 		$char: "\E04E";
 	}
-	@if $filename == music-single {
+	@if $filename == music {
 		$char: "\E04F";
 	}
-	@if $filename == music {
+	@if $filename == music-single {
 		$char: "\E050";
 	}
 	@if $filename == order {
@@ -273,10 +273,10 @@
 	@if $filename == orulo-logo {
 		$char: "\E052";
 	}
-	@if $filename == phone-square {
+	@if $filename == phone {
 		$char: "\E053";
 	}
-	@if $filename == phone {
+	@if $filename == phone-square {
 		$char: "\E054";
 	}
 	@if $filename == pie-chart {
@@ -309,10 +309,10 @@
 	@if $filename == rss {
 		$char: "\E05E";
 	}
-	@if $filename == sad-o {
+	@if $filename == sad {
 		$char: "\E05F";
 	}
-	@if $filename == sad {
+	@if $filename == sad-o {
 		$char: "\E060";
 	}
 	@if $filename == search {
@@ -324,10 +324,10 @@
 	@if $filename == shopping-cart {
 		$char: "\E063";
 	}
-	@if $filename == smile-o {
+	@if $filename == smile {
 		$char: "\E064";
 	}
-	@if $filename == smile {
+	@if $filename == smile-o {
 		$char: "\E065";
 	}
 	@if $filename == star {
@@ -336,40 +336,40 @@
 	@if $filename == suite {
 		$char: "\E067";
 	}
-	@if $filename == tag-o {
+	@if $filename == tag {
 		$char: "\E068";
 	}
-	@if $filename == tag {
+	@if $filename == tag2 {
 		$char: "\E069";
 	}
-	@if $filename == tag2 {
+	@if $filename == tag-o {
 		$char: "\E06A";
 	}
-	@if $filename == th-single {
+	@if $filename == th {
 		$char: "\E06B";
 	}
-	@if $filename == th {
+	@if $filename == th-single {
 		$char: "\E06C";
 	}
-	@if $filename == thumb-down-o {
+	@if $filename == thumb-down {
 		$char: "\E06D";
 	}
-	@if $filename == thumb-down {
+	@if $filename == thumb-down-o {
 		$char: "\E06E";
 	}
-	@if $filename == thumb-up-o {
+	@if $filename == thumb-up {
 		$char: "\E06F";
 	}
-	@if $filename == thumb-up {
+	@if $filename == thumb-up-o {
 		$char: "\E070";
 	}
 	@if $filename == times {
 		$char: "\E071";
 	}
-	@if $filename == trash-user {
+	@if $filename == trash {
 		$char: "\E072";
 	}
-	@if $filename == trash {
+	@if $filename == trash-user {
 		$char: "\E073";
 	}
 	@if $filename == upload {
@@ -378,13 +378,13 @@
 	@if $filename == usd-circle {
 		$char: "\E075";
 	}
-	@if $filename == user-close {
+	@if $filename == user {
 		$char: "\E076";
 	}
-	@if $filename == user-plus {
+	@if $filename == user-close {
 		$char: "\E077";
 	}
-	@if $filename == user {
+	@if $filename == user-plus {
 		$char: "\E078";
 	}
 	@if $filename == users {
@@ -402,13 +402,13 @@
 	@if $filename == whatsapp {
 		$char: "\E07D";
 	}
-	@if $filename == youtube-play {
+	@if $filename == youtube {
 		$char: "\E07E";
 	}
-	@if $filename == youtube-square {
+	@if $filename == youtube-play {
 		$char: "\E07F";
 	}
-	@if $filename == youtube {
+	@if $filename == youtube-square {
 		$char: "\E080";
 	}
 
@@ -447,11 +447,14 @@
 .ing-box-o {
 	@include ing(box-o);
 }
-.ing-building {
-	@include ing(building);
+.ing-0008building {
+	@include ing(0008building);
 }
 .ing-bullhorn {
 	@include ing(bullhorn);
+}
+.ing-calendar {
+	@include ing(calendar);
 }
 .ing-calendar-birth {
 	@include ing(calendar-birth);
@@ -468,23 +471,20 @@
 .ing-calendar-phone {
 	@include ing(calendar-phone);
 }
-.ing-calendar {
-	@include ing(calendar);
+.ing-camera {
+	@include ing(camera);
 }
 .ing-camera-no-image {
 	@include ing(camera-no-image);
 }
-.ing-camera {
-	@include ing(camera);
-}
 .ing-car {
 	@include ing(car);
 }
-.ing-check-circle {
-	@include ing(check-circle);
-}
 .ing-check {
 	@include ing(check);
+}
+.ing-check-circle {
+	@include ing(check-circle);
 }
 .ing-chevron-down {
 	@include ing(chevron-down);
@@ -510,20 +510,20 @@
 .ing-chevron-up {
 	@include ing(chevron-up);
 }
-.ing-circle-o {
-	@include ing(circle-o);
-}
 .ing-circle {
 	@include ing(circle);
+}
+.ing-circle-o {
+	@include ing(circle-o);
 }
 .ing-clip {
 	@include ing(clip);
 }
-.ing-clock-3h {
-	@include ing(clock-3h);
-}
 .ing-clock {
 	@include ing(clock);
+}
+.ing-clock-3h {
+	@include ing(clock-3h);
 }
 .ing-close {
 	@include ing(close);
@@ -531,17 +531,17 @@
 .ing-columns-alt {
 	@include ing(columns-alt);
 }
-.ing-comment-idea {
-	@include ing(comment-idea);
-}
 .ing-comment {
 	@include ing(comment);
 }
-.ing-comments-rounded {
-	@include ing(comments-rounded);
+.ing-comment-idea {
+	@include ing(comment-idea);
 }
 .ing-comments {
 	@include ing(comments);
+}
+.ing-comments-rounded {
+	@include ing(comments-rounded);
 }
 .ing-desktop {
 	@include ing(desktop);
@@ -567,11 +567,14 @@
 .ing-exclamation-triangle {
 	@include ing(exclamation-triangle);
 }
+.ing-facebook {
+	@include ing(facebook);
+}
 .ing-facebook-square {
 	@include ing(facebook-square);
 }
-.ing-facebook {
-	@include ing(facebook);
+.ing-file {
+	@include ing(file);
 }
 .ing-file-excel {
 	@include ing(file-excel);
@@ -582,26 +585,23 @@
 .ing-file-pdf-o {
 	@include ing(file-pdf-o);
 }
+.ing-files {
+	@include ing(files);
+}
 .ing-file-text {
 	@include ing(file-text);
-}
-.ing-file-word-o {
-	@include ing(file-word-o);
 }
 .ing-file-word {
 	@include ing(file-word);
 }
-.ing-file {
-	@include ing(file);
-}
-.ing-files {
-	@include ing(files);
-}
-.ing-flag-o {
-	@include ing(flag-o);
+.ing-file-word-o {
+	@include ing(file-word-o);
 }
 .ing-flag {
 	@include ing(flag);
+}
+.ing-flag-o {
+	@include ing(flag-o);
 }
 .ing-gavel {
 	@include ing(gavel);
@@ -636,14 +636,14 @@
 .ing-link {
 	@include ing(link);
 }
+.ing-list {
+	@include ing(list);
+}
 .ing-list-alt {
 	@include ing(list-alt);
 }
 .ing-list-o {
 	@include ing(list-o);
-}
-.ing-list {
-	@include ing(list);
 }
 .ing-lock {
 	@include ing(lock);
@@ -660,11 +660,11 @@
 .ing-money-bag {
 	@include ing(money-bag);
 }
-.ing-music-single {
-	@include ing(music-single);
-}
 .ing-music {
 	@include ing(music);
+}
+.ing-music-single {
+	@include ing(music-single);
 }
 .ing-order {
 	@include ing(order);
@@ -672,11 +672,11 @@
 .ing-orulo-logo {
 	@include ing(orulo-logo);
 }
-.ing-phone-square {
-	@include ing(phone-square);
-}
 .ing-phone {
 	@include ing(phone);
+}
+.ing-phone-square {
+	@include ing(phone-square);
 }
 .ing-pie-chart {
 	@include ing(pie-chart);
@@ -708,11 +708,11 @@
 .ing-rss {
 	@include ing(rss);
 }
-.ing-sad-o {
-	@include ing(sad-o);
-}
 .ing-sad {
 	@include ing(sad);
+}
+.ing-sad-o {
+	@include ing(sad-o);
 }
 .ing-search {
 	@include ing(search);
@@ -723,11 +723,11 @@
 .ing-shopping-cart {
 	@include ing(shopping-cart);
 }
-.ing-smile-o {
-	@include ing(smile-o);
-}
 .ing-smile {
 	@include ing(smile);
+}
+.ing-smile-o {
+	@include ing(smile-o);
 }
 .ing-star {
 	@include ing(star);
@@ -735,41 +735,41 @@
 .ing-suite {
 	@include ing(suite);
 }
-.ing-tag-o {
-	@include ing(tag-o);
-}
 .ing-tag {
 	@include ing(tag);
 }
 .ing-tag2 {
 	@include ing(tag2);
 }
-.ing-th-single {
-	@include ing(th-single);
+.ing-tag-o {
+	@include ing(tag-o);
 }
 .ing-th {
 	@include ing(th);
 }
-.ing-thumb-down-o {
-	@include ing(thumb-down-o);
+.ing-th-single {
+	@include ing(th-single);
 }
 .ing-thumb-down {
 	@include ing(thumb-down);
 }
-.ing-thumb-up-o {
-	@include ing(thumb-up-o);
+.ing-thumb-down-o {
+	@include ing(thumb-down-o);
 }
 .ing-thumb-up {
 	@include ing(thumb-up);
 }
+.ing-thumb-up-o {
+	@include ing(thumb-up-o);
+}
 .ing-times {
 	@include ing(times);
 }
-.ing-trash-user {
-	@include ing(trash-user);
-}
 .ing-trash {
 	@include ing(trash);
+}
+.ing-trash-user {
+	@include ing(trash-user);
 }
 .ing-upload {
 	@include ing(upload);
@@ -777,14 +777,14 @@
 .ing-usd-circle {
 	@include ing(usd-circle);
 }
+.ing-user {
+	@include ing(user);
+}
 .ing-user-close {
 	@include ing(user-close);
 }
 .ing-user-plus {
 	@include ing(user-plus);
-}
-.ing-user {
-	@include ing(user);
 }
 .ing-users {
 	@include ing(users);
@@ -801,12 +801,12 @@
 .ing-whatsapp {
 	@include ing(whatsapp);
 }
+.ing-youtube {
+	@include ing(youtube);
+}
 .ing-youtube-play {
 	@include ing(youtube-play);
 }
 .ing-youtube-square {
 	@include ing(youtube-square);
-}
-.ing-youtube {
-	@include ing(youtube);
 }
