@@ -48,7 +48,7 @@
 	@if $filename == box-o {
 		$char: "\E007";
 	}
-	@if $filename == 0008building {
+	@if $filename == building {
 		$char: "\E008";
 	}
 	@if $filename == bullhorn {
@@ -447,8 +447,8 @@
 .ing-box-o {
 	@include ing(box-o);
 }
-.ing-0008building {
-	@include ing(0008building);
+.ing-building {
+	@include ing(building);
 }
 .ing-bullhorn {
 	@include ing(bullhorn);
