@@ -411,6 +411,90 @@
 	@if $filename == youtube-square {
 		$char: "\E080";
 	}
+	@if $filename == android {
+		$char: "\E081";
+	}
+	@if $filename == arrow-circle-down {
+		$char: "\E082";
+	}
+	@if $filename == arrow-circle-left {
+		$char: "\E083";
+	}
+	@if $filename == arrow-circle-right {
+		$char: "\E084";
+	}
+	@if $filename == bell {
+		$char: "\E085";
+	}
+	@if $filename == block {
+		$char: "\E086";
+	}
+	@if $filename == block-circle {
+		$char: "\E087";
+	}
+	@if $filename == calculator {
+		$char: "\E088";
+	}
+	@if $filename == chart-bar {
+		$char: "\E089";
+	}
+	@if $filename == chart-bar-up {
+		$char: "\E08A";
+	}
+	@if $filename == chart-pie {
+		$char: "\E08B";
+	}
+	@if $filename == close-circle {
+		$char: "\E08C";
+	}
+	@if $filename == config {
+		$char: "\E08D";
+	}
+	@if $filename == cutlery {
+		$char: "\E08E";
+	}
+	@if $filename == edit-o {
+		$char: "\E08F";
+	}
+	@if $filename == exchange-02 {
+		$char: "\E090";
+	}
+	@if $filename == filter {
+		$char: "\E091";
+	}
+	@if $filename == flag-notification {
+		$char: "\E092";
+	}
+	@if $filename == gears-dual {
+		$char: "\E093";
+	}
+	@if $filename == key-home {
+		$char: "\E094";
+	}
+	@if $filename == key-home-circle {
+		$char: "\E095";
+	}
+	@if $filename == lock-02 {
+		$char: "\E096";
+	}
+	@if $filename == lock-02-circle {
+		$char: "\E097";
+	}
+	@if $filename == map-maker-home {
+		$char: "\E098";
+	}
+	@if $filename == phone-circle {
+		$char: "\E099";
+	}
+	@if $filename == send {
+		$char: "\E09A";
+	}
+	@if $filename == sitemap {
+		$char: "\E09B";
+	}
+	@if $filename == target {
+		$char: "\E09C";
+	}
 
 	@return $char;
 }
@@ -809,4 +893,88 @@
 }
 .ing-youtube-square {
 	@include ing(youtube-square);
+}
+.ing-android {
+	@include ing(android);
+}
+.ing-arrow-circle-down {
+	@include ing(arrow-circle-down);
+}
+.ing-arrow-circle-left {
+	@include ing(arrow-circle-left);
+}
+.ing-arrow-circle-right {
+	@include ing(arrow-circle-right);
+}
+.ing-bell {
+	@include ing(bell);
+}
+.ing-block {
+	@include ing(block);
+}
+.ing-block-circle {
+	@include ing(block-circle);
+}
+.ing-calculator {
+	@include ing(calculator);
+}
+.ing-chart-bar {
+	@include ing(chart-bar);
+}
+.ing-chart-bar-up {
+	@include ing(chart-bar-up);
+}
+.ing-chart-pie {
+	@include ing(chart-pie);
+}
+.ing-close-circle {
+	@include ing(close-circle);
+}
+.ing-config {
+	@include ing(config);
+}
+.ing-cutlery {
+	@include ing(cutlery);
+}
+.ing-edit-o {
+	@include ing(edit-o);
+}
+.ing-exchange-02 {
+	@include ing(exchange-02);
+}
+.ing-filter {
+	@include ing(filter);
+}
+.ing-flag-notification {
+	@include ing(flag-notification);
+}
+.ing-gears-dual {
+	@include ing(gears-dual);
+}
+.ing-key-home {
+	@include ing(key-home);
+}
+.ing-key-home-circle {
+	@include ing(key-home-circle);
+}
+.ing-lock-02 {
+	@include ing(lock-02);
+}
+.ing-lock-02-circle {
+	@include ing(lock-02-circle);
+}
+.ing-map-maker-home {
+	@include ing(map-maker-home);
+}
+.ing-phone-circle {
+	@include ing(phone-circle);
+}
+.ing-send {
+	@include ing(send);
+}
+.ing-sitemap {
+	@include ing(sitemap);
+}
+.ing-target {
+	@include ing(target);
 }

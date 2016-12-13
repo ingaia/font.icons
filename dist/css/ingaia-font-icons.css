@@ -532,3 +532,115 @@
 .ing-youtube-square:before {
 	content: "\E080";
 }
+
+.ing-android:before {
+	content: "\E081";
+}
+
+.ing-arrow-circle-down:before {
+	content: "\E082";
+}
+
+.ing-arrow-circle-left:before {
+	content: "\E083";
+}
+
+.ing-arrow-circle-right:before {
+	content: "\E084";
+}
+
+.ing-bell:before {
+	content: "\E085";
+}
+
+.ing-block:before {
+	content: "\E086";
+}
+
+.ing-block-circle:before {
+	content: "\E087";
+}
+
+.ing-calculator:before {
+	content: "\E088";
+}
+
+.ing-chart-bar:before {
+	content: "\E089";
+}
+
+.ing-chart-bar-up:before {
+	content: "\E08A";
+}
+
+.ing-chart-pie:before {
+	content: "\E08B";
+}
+
+.ing-close-circle:before {
+	content: "\E08C";
+}
+
+.ing-config:before {
+	content: "\E08D";
+}
+
+.ing-cutlery:before {
+	content: "\E08E";
+}
+
+.ing-edit-o:before {
+	content: "\E08F";
+}
+
+.ing-exchange-02:before {
+	content: "\E090";
+}
+
+.ing-filter:before {
+	content: "\E091";
+}
+
+.ing-flag-notification:before {
+	content: "\E092";
+}
+
+.ing-gears-dual:before {
+	content: "\E093";
+}
+
+.ing-key-home:before {
+	content: "\E094";
+}
+
+.ing-key-home-circle:before {
+	content: "\E095";
+}
+
+.ing-lock-02:before {
+	content: "\E096";
+}
+
+.ing-lock-02-circle:before {
+	content: "\E097";
+}
+
+.ing-map-maker-home:before {
+	content: "\E098";
+}
+
+.ing-phone-circle:before {
+	content: "\E099";
+}
+
+.ing-send:before {
+	content: "\E09A";
+}
+
+.ing-sitemap:before {
+	content: "\E09B";
+}
+
+.ing-target:before {
+	content: "\E09C";
+}
