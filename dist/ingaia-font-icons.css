@@ -601,7 +601,7 @@
 	content: "\E091";
 }
 
-.ing-flag-notification:before {
+.ing-flag-circle-o:before {
 	content: "\E092";
 }
 
@@ -643,4 +643,20 @@
 
 .ing-target:before {
 	content: "\E09C";
+}
+
+.ing-commenting:before {
+	content: "\E09D";
+}
+
+.ing-calendar-empty:before {
+	content: "\E09E";
+}
+
+.ing-plus-circle:before {
+	content: "\E09F";
+}
+
+.ing-minus-circle:before {
+	content: "\E0A0";
 }

@@ -462,7 +462,7 @@
 	@if $filename == filter {
 		$char: "\E091";
 	}
-	@if $filename == flag-notification {
+	@if $filename == flag-circle-o {
 		$char: "\E092";
 	}
 	@if $filename == gears-dual {
@@ -494,6 +494,18 @@
 	}
 	@if $filename == target {
 		$char: "\E09C";
+	}
+	@if $filename == commenting {
+		$char: "\E09D";
+	}
+	@if $filename == calendar-empty {
+		$char: "\E09E";
+	}
+	@if $filename == plus-circle {
+		$char: "\E09F";
+	}
+	@if $filename == minus-circle {
+		$char: "\E0A0";
 	}
 
 	@return $char;
@@ -945,8 +957,8 @@
 .ing-filter {
 	@include ing(filter);
 }
-.ing-flag-notification {
-	@include ing(flag-notification);
+.ing-flag-circle-o {
+	@include ing(flag-circle-o);
 }
 .ing-gears-dual {
 	@include ing(gears-dual);
@@ -977,4 +989,16 @@
 }
 .ing-target {
 	@include ing(target);
+}
+.ing-commenting {
+	@include ing(commenting);
+}
+.ing-calendar-empty {
+	@include ing(calendar-empty);
+}
+.ing-plus-circle {
+	@include ing(plus-circle);
+}
+.ing-minus-circle {
+	@include ing(minus-circle);
 }
