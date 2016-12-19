@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "ingaia-font-icons";
-	src: url('../fonts/ingaia-font-icons.eot');
-	src: url('../fonts/ingaia-font-icons.eot?#iefix') format('eot'),
-		url('../fonts/ingaia-font-icons.woff2') format('woff2'),
-		url('../fonts/ingaia-font-icons.woff') format('woff'),
-		url('../fonts/ingaia-font-icons.ttf') format('truetype'),
-		url('../fonts/ingaia-font-icons.svg#ingaia-font-icons') format('svg');
+	src: url('fonts/ingaia-font-icons.eot');
+	src: url('fonts/ingaia-font-icons.eot?#iefix') format('eot'),
+		url('fonts/ingaia-font-icons.woff2') format('woff2'),
+		url('fonts/ingaia-font-icons.woff') format('woff'),
+		url('fonts/ingaia-font-icons.ttf') format('truetype'),
+		url('fonts/ingaia-font-icons.svg#ingaia-font-icons') format('svg');
 }
 
 .ing:before {

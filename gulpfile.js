@@ -10,12 +10,13 @@ var brand = 'ingaia-font-icons';
 var fontName = brand;
 var cssClass = 'ing';
 
-
+//Deleta a paste dist
 gulp.task('clean', function() {
 	// Return the Promise from del() 
 	return del('dist/');
 });
 
+//Cria o arquivo CSS
 gulp.task('iconfont-css', function(){
 
   return gulp.src(['svg/*.svg'])
@@ -24,8 +25,8 @@ gulp.task('iconfont-css', function(){
 	}))
 	.pipe(iconfontCss({
 	  fontName: fontName,
-	  targetPath: '../css/'+ brand +'.css',
-	  fontPath: '../fonts/',
+	  targetPath: '../'+ brand +'.css',
+	  fontPath: 'fonts/',
 	  cssClass: cssClass
 	}))
 	.pipe(iconfont({
@@ -38,6 +39,7 @@ gulp.task('iconfont-css', function(){
 
 });
 
+//Cria o arquivo SASS
 gulp.task('iconfont-sass', function(){
 
   return gulp.src(['svg/*.svg'])
@@ -61,6 +63,7 @@ gulp.task('iconfont-sass', function(){
 
 });
 
+//Cria o arquivo HTML
 gulp.task('template-html', function(){
 
   return gulp.src(['svg/*.svg'])
@@ -70,7 +73,7 @@ gulp.task('template-html', function(){
 	.pipe(iconfontTemplate({
 		fontName: brand,
 		path: 'templates/template.html',
-		targetPath: '../css/template.html',
+		targetPath: '../template.html',
 		fontPath: 'dist/fonts/',
 		cssClass: cssClass
 	  }))
@@ -86,6 +89,6 @@ gulp.task('template-html', function(){
 
 gulp.task('default', function(callback) {
   runSequence('clean',
-              ['iconfont-css', 'iconfont-sass', 'template-html'],              
+              ['template-html','iconfont-css', 'iconfont-sass'],              
               callback);
 });

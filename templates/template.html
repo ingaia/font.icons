@@ -6,169 +6,268 @@
 <title>Examples</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="<%=fontName%>.css">
 <style type="text/css">
 .<%= cssClass %>-binary {
-    font-family: "<%=fontName%>";
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    text-decoration: none;
-    text-transform: none;
+	font-family: "<%=fontName%>";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
 }
+
+body { background-color: #dedede; }
+.menu { padding: 20px 0 0 15px; }
+.ing, .ing-binary { font-size: 50px; }
+
+#exemple { margin-top: 20px; }
+#exemple:nth-child(1) { margin-right: 10px; }
+.exemple { display: none; }
+.github { font-size: 19px; }
 
 .my-class-name:before{
 	content: "\<%= glyphs[0].codePoint %>";
 }
 
-ul, li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+ul, li{	margin: 0; padding: 0;	list-style: none; }
+
+i{ display: block; }
+
+.class-name li, .hex li, .binary li{ display: none; }
+.class-name .class-name-demo{ display: block; }
+.hex .hex-demo{	display: block; }
+.binary .binary-demo{ display: block; }
+.binary .binary-demo pre{ display: inline; }
+
+.clearfix:after { content:"."; 	display:block; height:0; clear:both; visibility:hidden }
+
+
+
+.card { margin-top: 15px; }
+#icon-list .card-block { color: #fff; }
+.card-footer { max-height: 62px; }
+
+.list-inline-item:not(:last-child) { margin-right: -5px; }
+
+.icon-show-type{ clear: both; }
+.icon-show-type li span{ display: block; }
+.icon-show-type input{ display: none; }
+.icon-show-type label.middle { 
+	 -webkit-border-top-left-radius: 0px;
+	 -webkit-border-bottom-left-radius: 0px;
+		-moz-border-radius-topleft: 0px;
+		-moz-border-radius-bottomleft: 0px;
+			 border-top-left-radius: 0px;
+			 border-bottom-left-radius: 0px;
+	 -webkit-border-top-right-radius: 0px;
+	 -webkit-border-bottom-right-radius: 0px;
+		-moz-border-radius-topright: 0px;
+		-moz-border-radius-bottomright: 0px;
+			 border-top-right-radius: 0px;
+			 border-bottom-right-radius: 0px;
 }
-ul li{
-    float: left;
-    text-align: center;
+.icon-show-type label.first { 
+	 -webkit-border-top-left-radius: 2px;
+	 -webkit-border-bottom-left-radius: 2px;
+		-moz-border-radius-topleft: 2px;
+		-moz-border-radius-bottomleft: 2px;
+			 border-top-left-radius: 2px;
+			 border-bottom-left-radius: 2px;
+	 -webkit-border-top-right-radius: 0;
+	 -webkit-border-bottom-right-radius: 0;
+		-moz-border-radius-topright: 0;
+		-moz-border-radius-bottomright: 0;
+			 border-top-right-radius: 0;
+			 border-bottom-right-radius: 0;
 }
-ul li:hover{
-    background: #ddd;
+.icon-show-type label.last { 
+	 -webkit-border-top-right-radius: 2px;
+	 -webkit-border-bottom-right-radius: 2px;
+		-moz-border-radius-topright: 2px;
+		-moz-border-radius-bottomright: 2px;
+			 border-top-right-radius: 2px;
+			 border-bottom-right-radius: 2px;
+	 -webkit-border-top-left-radius: 0;
+	 -webkit-border-bottom-left-radius: 0;
+		-moz-border-radius-topleft: 0;
+		-moz-border-radius-bottomleft: 0;
+			 border-top-left-radius: 0;
+			 border-bottom-left-radius: 0;
 }
 
-#icon-list li{
-	padding: 10px;
-}
-.icon-show-type{
-	clear: both;
-}
-.icon-show-type li span{
-	display: block;
-	padding: 10px;
-}
-.icon-show-type input{
-	display: none;
-}
-.icon-show-type input:checked ~ span{
-	background: #ddd;
-}
-
-i{
-	display: block;
-}
-
-#icon-demo i{
-	float: left;
-    padding-left: 10px;
-}
-.class-name li, .hex li, .binary li{
-	display: none;
-}
-.class-name .class-name-demo{
-	display: block;
-}
-.hex .hex-demo{
-	display: block;
-}
-.binary .binary-demo{
-	display: block;
-}
-
-.binary .binary-demo pre{
-	display: inline;
-}
-
-.clearfix:after { 
-	content:"."; 
-	display:block; 
-	height:0; 
-	clear:both; 
-	visibility:hidden 
-}
+.busca i { font-size: 19px; margin-top: 4px; margin-left: 4px; margin-right: 2px; }
 
 </style>
 </head>
 <body>
+<div class="container">
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-8 menu text-xs-center text-sm-left">
+			<ul class="icon-show-type btn-group" data-toggle="buttons">
+				<li class="list-inline-item" onclick="showIconType(0)">
+					<label class="btn btn-lg btn-outline-danger first active">
+						<input type="radio" name="icon-type" checked>
+						<span class="text-uppercase">className</span>
+					</label>
+				</li>
+				<li class="list-inline-item" onclick="showIconType(1)">
+					<label class="btn btn-lg btn-outline-danger middle">
+						<input type="radio" name="icon-type">
+						<span class="text-uppercase">hex</span>
+					</label>
+				</li>
+				<li class="list-inline-item" onclick="showIconType(2)">
+					<label class="btn btn-lg btn-outline-danger last">
+						<input type="radio" name="icon-type">
+						<span class="text-uppercase">binary</span>
+					</label>
+				</li>
+			</ul>			
+		</div>
+		<div class="col-xs-12 col-sm-4 text-xs-center">
+			<button type="button" id="exemple" class="btn btn-outline-info btn-lg float-sm-right text-uppercase">Exemplo</button>
+			<a href="https://github.com/ingaia/font.icons" target="_blank"><button type="button" id="exemple" class="btn btn-outline-info btn-lg float-sm-right text-uppercase"><i class="ing ing-github github"></i></button></a>
+		</div>
+	</div>
+	<hr/>
 
-<ul class="icon-show-type clearfix">
-	<li>
-		<label onclick="showIconType(0)">
-			<input type="radio" name="icon-type">
-			<span>className</span>
-		</label>
-	</li>
-	<li>
-		<label onclick="showIconType(1)">
-			<input type="radio" name="icon-type">
-			<span>hex</span>
-		</label>
-	</li>
-	<li>
-		<label onclick="showIconType(2)">
-			<input type="radio" name="icon-type">
-			<span>binary</span>
-		</label>
-	</li>
-</ul>
-<hr/>
-Demo
-<div id="icon-demo" class="class-name clearfix">
-	<li class="class-name-demo">
-		<i class="<%= cssClass %> <%= cssClass %>-<%= glyphs[0].fileName %>"></i>
-		<pre>
-			&lt;i class="<%= cssClass %> <%= cssClass %>-<%= glyphs[0].fileName %>"&gt;&lt;/i&gt;
-		</pre>
-	</li>
-	<li class="hex-demo">
-		<i class="<%= cssClass %> my-class-name"></i>
-		<pre>
-		    &lt;style&gt;
-			    .my-class-name:before{
-				    content: "\<%= glyphs[0].codePoint %>";
-				}
-			&lt;/style&gt;
 
-			&lt;i class="<%= cssClass %> my-class-name"&gt;&lt;/i&gt;
-		</pre>
-	</li>
-	<li class="binary-demo">
-		<i class="<%= cssClass %>-binary">&#<%=+('0x' + glyphs[0].codePoint).toString(10)%>;</i>
-		<pre>
-		    &lt;style&gt;
-				.<%= cssClass %>-binary {
-				    font-family: "<%=fontName%>";
-				    -webkit-font-smoothing: antialiased;
-				    -moz-osx-font-smoothing: grayscale;
-				    font-style: normal;
-				    font-variant: normal;
-				    font-weight: normal;
-				    text-decoration: none;
-				    text-transform: none;
-				}
-			&lt;/style&gt;
-			&lt;i class="<%= cssClass %>-binary"&gt; &amp;#<%=+('0x' + glyphs[0].codePoint).toString(10)%>;&lt;/i&gt; 
-		</pre>
-	</li>
-</div>
-<hr/>
-<ul id="icon-list" class="class-name">
-<% _.each(glyphs, function(glyph) { %>
-<li class="class-name-demo">
-    <i class="<%= cssClass %> <%= cssClass %>-<%= glyph.fileName %>"></i>
-    <pre><%= cssClass %>-<%= glyph.fileName %></pre>
-</li>
-<li class="hex-demo">
-    <i class="<%= cssClass %> <%= cssClass %>-<%= glyph.fileName %>"></i>
-    <pre>\<%= glyph.codePoint %></pre>
-</li>
-<li class="binary-demo">
-    <i class="<%= cssClass %>-binary">&#<%=+('0x' + glyph.codePoint).toString(10)%>;</i>
-    <pre>&amp;#<%=+('0x' + glyph.codePoint).toString(10)%>;</pre>
-</li>
-<% }); %>
-</ul>
 
+
+
+
+
+	<div class="row">
+	
+		<div class="col-xs-12 exemple">
+
+
+			Exemplo:
+			<div id="icon-demo" class="class-name clearfix">
+				<li class="class-name-demo">
+					<i class="<%= cssClass %> <%= cssClass %>-<%= glyphs[0].fileName %>"></i>
+<pre>
+	&lt;i class="<%= cssClass %> <%= cssClass %>-<%= glyphs[0].fileName %>"&gt;&lt;/i&gt;
+</pre>
+				</li>
+				<li class="hex-demo">
+					<i class="<%= cssClass %> my-class-name"></i>
+<pre>
+	&lt;style&gt;
+		.my-class-name:before{
+			content: "\<%= glyphs[0].codePoint %>";
+		}
+	&lt;/style&gt;
+
+	&lt;i class="<%= cssClass %> my-class-name"&gt;&lt;/i&gt;
+</pre>
+				</li>
+				<li class="binary-demo">
+					<i class="<%= cssClass %>-binary">&#<%=+('0x' + glyphs[0].codePoint).toString(10)%>;</i>
+<pre>
+	&lt;style&gt;
+	.<%= cssClass %>-binary {
+		font-family: "<%=fontName%>";
+		-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: normal;
+			text-decoration: none;
+			text-transform: none;
+		}
+	&lt;/style&gt;
+	&lt;i class="<%= cssClass %>-binary"&gt; &amp;#<%=+('0x' + glyphs[0].codePoint).toString(10)%>;&lt;/i&gt; 
+</pre>
+				</li>
+			</div>
+			<hr/>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+		<div class="input-group busca">			
+			<span class="input-group-addon" id="basic-addon1"><i class="ing ing-search"></i></span>
+			<input type="text" id="myInput" class="form-control form-control-lg" onkeyup="myFunction()" placeholder="Buscar...">
+		</div>
+
+
+	<div class="row">
+		<ul id="icon-list" class="class-name">
+			<% _.each(glyphs, function(glyph) { %>
+			<li class="class-name-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse card-info">
+							<i class="<%= cssClass %> <%= cssClass %>-<%= glyph.fileName %>"></i>
+						</div>
+						<div class="card-footer card-secondary">	
+<pre><%= cssClass %>-<%= glyph.fileName %></pre>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+			<li class="hex-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse card-info">
+								<i class="<%= cssClass %> <%= cssClass %>-<%= glyph.fileName %>"></i>
+						</div>
+						<div class="card-footer card-secondary">		
+<pre class="hidden-xs-up"><%= cssClass %>-<%= glyph.fileName %></pre>
+<pre>\<%= glyph.codePoint %></pre>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="binary-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse card-info">
+								<i class="<%= cssClass %>-binary">&#<%=+('0x' + glyph.codePoint).toString(10)%>;</i>
+						</div>
+						<div class="card-footer card-secondary">	
+<pre class="hidden-xs-up"><%= cssClass %>-<%= glyph.fileName %></pre>
+<pre>&amp;#<%=+('0x' + glyph.codePoint).toString(10)%>;</pre>
+						</div>
+					</div>
+				</div>
+			</li>
+			<% }); %>
+		</ul>
+	</div>
+
+</div><!--/.container-->
+
+
+
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	function showIconType(type){
 		var classMap = {
@@ -181,6 +280,37 @@ Demo
 		document.getElementById('icon-demo').className = classMap[type] + ' clearfix';
 
 	}
+</script>
+
+<script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, pre;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("icon-list");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        pre = li[i].getElementsByTagName("pre")[0];
+        if (pre.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+$( document ).ready(function() {
+    $("#exemple").click(function() { 
+       	$(".exemple").slideToggle();
+	});
+});
+
+
+
+
+
 </script>
 </body>
 </html>
