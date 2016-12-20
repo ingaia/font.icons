@@ -10,9 +10,8 @@ var brand = 'ingaia-font-icons';
 var fontName = brand;
 var cssClass = 'ing';
 
-//Deleta a paste dist
-gulp.task('clean', function() {
-	// Return the Promise from del() 
+//Deleta a pasta dist
+gulp.task('clean', function() {	
 	return del('dist/');
 });
 
@@ -73,7 +72,7 @@ gulp.task('template-html', function(){
 	.pipe(iconfontTemplate({
 		fontName: brand,
 		path: 'templates/template.html',
-		targetPath: '../template.html',
+		targetPath: '../index.html',
 		fontPath: 'dist/fonts/',
 		cssClass: cssClass
 	  }))
