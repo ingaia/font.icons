@@ -72,7 +72,7 @@ gulp.task('template-html', function(){
 	.pipe(iconfontTemplate({
 		fontName: brand,
 		path: 'templates/template.html',
-		targetPath: '../index.html',
+		targetPath: '../../index.html',
 		fontPath: 'dist/fonts/',
 		cssClass: cssClass
 	  }))
