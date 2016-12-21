@@ -1,5 +1,7 @@
 # inGaia Font Icons
 
+[Site](https://ingaia.github.io/font.icons/)
+
 ## Download
 
 ### npm
@@ -24,8 +26,9 @@ $ npm install
 
 ## Adicionando mais ícones
 
-1. Copie o arquivo SVG na pasta `/svg` seguindo a numeração, é importante colocar 4 números mais o traço "-".
-Exemplo:
+1. Copie o arquivo SVG na pasta `/svg` seguindo a numeração, é importante colocar 4 números mais o traço `"-"`.
+
+ Exemplo:
 `0001-nomedaimagem.svg`
 
 2. No console execute o comando para gerar os ícones.
