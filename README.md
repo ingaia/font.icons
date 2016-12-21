@@ -28,7 +28,7 @@ $ npm install
 
 1. Copie o arquivo SVG na pasta `/svg` seguindo a numeração, é importante colocar 4 números mais o traço `"-"`.
 
-Exemplo:
+ Exemplo:
 `0001-nomedaimagem.svg`
 
 2. No console execute o comando para gerar os ícones.
