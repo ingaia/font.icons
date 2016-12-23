@@ -437,7 +437,7 @@
 	content: "\E068";
 }
 
-.ing-tag2:before {
+.ing-tag-02:before {
 	content: "\E069";
 }
 
@@ -659,4 +659,28 @@
 
 .ing-minus-circle:before {
 	content: "\E0A0";
+}
+
+.ing-chevron-double-right:before {
+	content: "\E0A1";
+}
+
+.ing-chevron-double-left:before {
+	content: "\E0A2";
+}
+
+.ing-chevron-double-up:before {
+	content: "\E0A3";
+}
+
+.ing-chevron-double-down:before {
+	content: "\E0A4";
+}
+
+.ing-delete-group:before {
+	content: "\E0A5";
+}
+
+.ing-list-02:before {
+	content: "\E0A6";
 }

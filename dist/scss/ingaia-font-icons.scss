@@ -339,7 +339,7 @@
 	@if $filename == tag {
 		$char: "\E068";
 	}
-	@if $filename == tag2 {
+	@if $filename == tag-02 {
 		$char: "\E069";
 	}
 	@if $filename == tag-o {
@@ -506,6 +506,24 @@
 	}
 	@if $filename == minus-circle {
 		$char: "\E0A0";
+	}
+	@if $filename == chevron-double-right {
+		$char: "\E0A1";
+	}
+	@if $filename == chevron-double-left {
+		$char: "\E0A2";
+	}
+	@if $filename == chevron-double-up {
+		$char: "\E0A3";
+	}
+	@if $filename == chevron-double-down {
+		$char: "\E0A4";
+	}
+	@if $filename == delete-group {
+		$char: "\E0A5";
+	}
+	@if $filename == list-02 {
+		$char: "\E0A6";
 	}
 
 	@return $char;
@@ -834,8 +852,8 @@
 .ing-tag {
 	@include ing(tag);
 }
-.ing-tag2 {
-	@include ing(tag2);
+.ing-tag-02 {
+	@include ing(tag-02);
 }
 .ing-tag-o {
 	@include ing(tag-o);
@@ -1001,4 +1019,22 @@
 }
 .ing-minus-circle {
 	@include ing(minus-circle);
+}
+.ing-chevron-double-right {
+	@include ing(chevron-double-right);
+}
+.ing-chevron-double-left {
+	@include ing(chevron-double-left);
+}
+.ing-chevron-double-up {
+	@include ing(chevron-double-up);
+}
+.ing-chevron-double-down {
+	@include ing(chevron-double-down);
+}
+.ing-delete-group {
+	@include ing(delete-group);
+}
+.ing-list-02 {
+	@include ing(list-02);
 }
