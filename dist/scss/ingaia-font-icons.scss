@@ -525,6 +525,9 @@
 	@if $filename == list-02 {
 		$char: "\E0A6";
 	}
+	@if $filename == check-circle-o {
+		$char: "\E0A7";
+	}
 
 	@return $char;
 }
@@ -1037,4 +1040,7 @@
 }
 .ing-list-02 {
 	@include ing(list-02);
+}
+.ing-check-circle-o {
+	@include ing(check-circle-o);
 }

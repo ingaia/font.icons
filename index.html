@@ -27,7 +27,7 @@ body { background-color: #dedede; }
 #exemple { margin-top: 20px; }
 #exemple:nth-child(1) { margin-right: 10px; }
 .exemple { display: none; }
-.github { font-size: 19px; }
+.download a i { font-size: 17px; font-style: normal; }
 
 .my-class-name:before{
 	content: "\E001";
@@ -131,15 +131,18 @@ i{ display: block; }
 		</div>
 		<div class="col-xs-12 col-sm-4 text-xs-center">
 			<button type="button" id="exemple" class="btn btn-outline-info btn-lg float-sm-right text-uppercase">Exemplo</button>
-			<a href="https://github.com/ingaia/font.icons" target="_blank"><button type="button" id="exemple" class="btn btn-outline-info btn-lg float-sm-right text-uppercase"><i class="ing ing-github github"></i></button></a>
+			<div class="btn-group">
+			  <button type="button" id="exemple" class="btn btn-lg btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    DOWNLOAD
+			  </button>
+				<div class="dropdown-menu dropdown-menu-right download">
+			  	<a class="dropdown-item" href="https://github.com/ingaia/font.icons" target="_blank"><i class="ing ing-github"> Github</i></a>
+			  	<a class="dropdown-item" href="https://github.com/ingaia/font.icons/raw/master/dist/fonts/ingaia-font-icons.ttf"><i class="ing ing-desktop"> Font for desktop</i></a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<hr/>
-
-
-
-
-
 
 
 	<div class="row">
@@ -7507,6 +7510,50 @@ i{ display: block; }
 						<div class="card-footer card-secondary">	
 <pre class="hidden-xs-up">ing-list-02</pre>
 <pre>&amp;#57510;</pre>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="class-name-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse card-info">
+							<!-- <i class="ing ing-check-circle-o"></i> -->
+							<i class="ing-binary">&#57511;</i>
+						</div>
+						<div class="card-footer card-secondary">	
+<pre>ing-check-circle-o</pre>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+			<li class="hex-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse card-info">
+								<!-- <i class="ing ing-check-circle-o"></i> -->
+								<i class="ing-binary">&#57511;</i>
+						</div>
+						<div class="card-footer card-secondary">		
+<pre class="hidden-xs-up">ing-check-circle-o</pre>
+<pre>\E0A7</pre>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="binary-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse card-info">
+								<i class="ing-binary">&#57511;</i>
+						</div>
+						<div class="card-footer card-secondary">	
+<pre class="hidden-xs-up">ing-check-circle-o</pre>
+<pre>&amp;#57511;</pre>
 						</div>
 					</div>
 				</div>
