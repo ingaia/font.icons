@@ -361,7 +361,7 @@
 	content: "\E055";
 }
 
-.ing-play:before {
+.ing-play-circle-o:before {
 	content: "\E056";
 }
 
@@ -687,4 +687,12 @@
 
 .ing-check-circle-o:before {
 	content: "\E0A7";
+}
+
+.ing-close-sm:before {
+	content: "\E0A8";
+}
+
+.ing-play:before {
+	content: "\E0A9";
 }
