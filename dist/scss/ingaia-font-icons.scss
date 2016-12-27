@@ -282,7 +282,7 @@
 	@if $filename == pie-chart {
 		$char: "\E055";
 	}
-	@if $filename == play {
+	@if $filename == play-circle-o {
 		$char: "\E056";
 	}
 	@if $filename == plus {
@@ -527,6 +527,12 @@
 	}
 	@if $filename == check-circle-o {
 		$char: "\E0A7";
+	}
+	@if $filename == close-sm {
+		$char: "\E0A8";
+	}
+	@if $filename == play {
+		$char: "\E0A9";
 	}
 
 	@return $char;
@@ -798,8 +804,8 @@
 .ing-pie-chart {
 	@include ing(pie-chart);
 }
-.ing-play {
-	@include ing(play);
+.ing-play-circle-o {
+	@include ing(play-circle-o);
 }
 .ing-plus {
 	@include ing(plus);
@@ -1043,4 +1049,10 @@
 }
 .ing-check-circle-o {
 	@include ing(check-circle-o);
+}
+.ing-close-sm {
+	@include ing(close-sm);
+}
+.ing-play {
+	@include ing(play);
 }
