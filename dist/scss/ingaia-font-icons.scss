@@ -534,6 +534,9 @@
 	@if $filename == play {
 		$char: "\E0A9";
 	}
+	@if $filename == comment-02 {
+		$char: "\E0AA";
+	}
 
 	@return $char;
 }
@@ -1055,4 +1058,7 @@
 }
 .ing-play {
 	@include ing(play);
+}
+.ing-comment-02 {
+	@include ing(comment-02);
 }

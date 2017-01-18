@@ -696,3 +696,7 @@
 .ing-play:before {
 	content: "\E0A9";
 }
+
+.ing-comment-02:before {
+	content: "\E0AA";
+}
