@@ -700,3 +700,7 @@
 .ing-comment-02:before {
 	content: "\E0AA";
 }
+
+.ing-link-02:before {
+	content: "\E0AB";
+}
