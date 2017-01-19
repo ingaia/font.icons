@@ -7,6 +7,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" type="text/css" href="dist/<%=fontName%>.css">
 <style type="text/css">
 .<%= cssClass %>-binary {
@@ -21,6 +22,7 @@
 }
 
 body { background-color: #dedede; }
+.container { margin-bottom: 60px; }
 .menu { padding: 20px 0 0 15px; }
 .ing, .ing-binary { font-size: 50px; }
 
@@ -100,7 +102,12 @@ i{ display: block; }
 }
 
 .busca i { font-size: 19px; margin-top: 4px; margin-left: 4px; margin-right: 2px; }
-
+.buscaFixed { 
+	position: fixed;
+	z-index: 999;
+	left: 0px;
+	bottom: 0px;
+}
 </style>
 </head>
 <body>
@@ -202,7 +209,7 @@ i{ display: block; }
 
 
 
-		<div class="input-group busca">			
+		<div class="input-group busca animated">			
 			<span class="input-group-addon" id="basic-addon1"><i class="ing ing-search"></i></span>
 			<input type="text" id="myInput" class="form-control form-control-lg" onkeyup="myFunction()" placeholder="Buscar...">
 		</div>
@@ -312,6 +319,27 @@ $( document ).ready(function() {
 	});
 });
 
+// BUSCA SCROLL
+function buscaScroll(){
+  var y = $(window).scrollTop();
+  //console.log(y);
+  
+  if(y > 114){ 
+    $('.busca').addClass('buscaFixed');      
+    $('.busca').addClass('bounceInDown');      
+  }
+
+  if(y < 114){ 
+    $('.busca').removeClass('buscaFixed');
+    $('.busca').removeClass('bounceInDown');        
+  }   
+}
+
+// BUSCA SCROLL
+window.onscroll=function(){
+  buscaScroll();  
+};
+buscaScroll();
 
 
 
