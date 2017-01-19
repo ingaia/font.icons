@@ -537,6 +537,9 @@
 	@if $filename == comment-02 {
 		$char: "\E0AA";
 	}
+	@if $filename == link-02 {
+		$char: "\E0AB";
+	}
 
 	@return $char;
 }
@@ -1061,4 +1064,7 @@
 }
 .ing-comment-02 {
 	@include ing(comment-02);
+}
+.ing-link-02 {
+	@include ing(link-02);
 }
