@@ -102,14 +102,12 @@ i{ display: block; }
 }
 
 .busca i { font-size: 19px; margin-top: 4px; margin-left: 4px; margin-right: 2px; }
-
 .buscaFixed { 
 	position: fixed;
 	z-index: 999;
 	left: 0px;
 	bottom: 0px;
 }
-
 </style>
 </head>
 <body>
@@ -7801,32 +7799,31 @@ $( document ).ready(function() {
 	});
 });
 
-
-  // BUSCA SCROLL
-  function buscaScroll(){
-    var y = $(window).scrollTop();
-    console.log(y); 
-
-    if(y > 114){ 
-      $('.busca').addClass('buscaFixed');      
-      $('.busca').addClass('bounceInDown');
-    }
-
-    if(y < 114){ 
-      $('.busca').removeClass('buscaFixed');
-      $('.busca').removeClass('bounceInDown');        
-    }   
+// BUSCA SCROLL
+function buscaScroll(){
+  var y = $(window).scrollTop();
+  //console.log(y);
+  
+  if(y > 114){ 
+    $('.busca').addClass('buscaFixed');      
+    $('.busca').addClass('bounceInDown');      
   }
 
-  // BUSCA SCROLL
-  window.onscroll=function(){
-    buscaScroll();  
-  };
-  buscaScroll();
+  if(y < 114){ 
+    $('.busca').removeClass('buscaFixed');
+    $('.busca').removeClass('bounceInDown');        
+  }   
+}
+
+// BUSCA SCROLL
+window.onscroll=function(){
+  buscaScroll();  
+};
+buscaScroll();
 
 
 
 
 </script>
 </body>
-</html>
+</html>
