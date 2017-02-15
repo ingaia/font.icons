@@ -704,3 +704,7 @@
 .ing-link-02:before {
 	content: "\E0AB";
 }
+
+.ing-bars:before {
+	content: "\E0AC";
+}

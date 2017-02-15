@@ -540,6 +540,9 @@
 	@if $filename == link-02 {
 		$char: "\E0AB";
 	}
+	@if $filename == bars {
+		$char: "\E0AC";
+	}
 
 	@return $char;
 }
@@ -1067,4 +1070,7 @@
 }
 .ing-link-02 {
 	@include ing(link-02);
+}
+.ing-bars {
+	@include ing(bars);
 }
