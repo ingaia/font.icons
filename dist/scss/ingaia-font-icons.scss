@@ -543,6 +543,9 @@
 	@if $filename == bars {
 		$char: "\E0AC";
 	}
+	@if $filename == sort-numeric-asc {
+		$char: "\E0AD";
+	}
 
 	@return $char;
 }
@@ -1073,4 +1076,7 @@
 }
 .ing-bars {
 	@include ing(bars);
+}
+.ing-sort-numeric-asc {
+	@include ing(sort-numeric-asc);
 }
