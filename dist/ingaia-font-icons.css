@@ -708,3 +708,7 @@
 .ing-bars:before {
 	content: "\E0AC";
 }
+
+.ing-sort-numeric-asc:before {
+	content: "\E0AD";
+}
