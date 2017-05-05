@@ -712,3 +712,7 @@
 .ing-sort-numeric-asc:before {
 	content: "\E0AD";
 }
+
+.ing-comment-bar:before {
+	content: "\E0AE";
+}
