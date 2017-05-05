@@ -546,6 +546,9 @@
 	@if $filename == sort-numeric-asc {
 		$char: "\E0AD";
 	}
+	@if $filename == comment-bar {
+		$char: "\E0AE";
+	}
 
 	@return $char;
 }
@@ -1079,4 +1082,7 @@
 }
 .ing-sort-numeric-asc {
 	@include ing(sort-numeric-asc);
+}
+.ing-comment-bar {
+	@include ing(comment-bar);
 }

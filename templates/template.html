@@ -108,6 +108,14 @@ i{ display: block; }
 	left: 0px;
 	bottom: 0px;
 }
+.version {
+  right: 10px;
+  top: 16px;
+  position: absolute;
+  color: #a9a9a9;
+  font-size: 14px;
+  z-index: 4;
+}
 </style>
 </head>
 <body>
@@ -202,14 +210,8 @@ i{ display: block; }
 	</div>
 
 
-
-
-
-
-
-
-
-		<div class="input-group busca animated">			
+		<div class="input-group busca animated">
+      <span class="version">v1.2.3</span>		
 			<span class="input-group-addon" id="basic-addon1"><i class="ing ing-search"></i></span>
 			<input type="text" id="myInput" class="form-control form-control-lg" onkeyup="myFunction()" placeholder="Buscar...">
 		</div>
