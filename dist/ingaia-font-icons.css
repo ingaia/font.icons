@@ -716,3 +716,31 @@
 .ing-comment-bar:before {
 	content: "\E0AE";
 }
+
+.ing-instagram:before {
+	content: "\E0AF";
+}
+
+.ing-smartphone:before {
+	content: "\E0B0";
+}
+
+.ing-consultant:before {
+	content: "\E0B1";
+}
+
+.ing-couch-o:before {
+	content: "\E0B2";
+}
+
+.ing-envelope-o:before {
+	content: "\E0B3";
+}
+
+.ing-tour:before {
+	content: "\E0B4";
+}
+
+.ing-building-car:before {
+	content: "\E0B5";
+}

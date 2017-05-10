@@ -549,6 +549,27 @@
 	@if $filename == comment-bar {
 		$char: "\E0AE";
 	}
+	@if $filename == instagram {
+		$char: "\E0AF";
+	}
+	@if $filename == smartphone {
+		$char: "\E0B0";
+	}
+	@if $filename == consultant {
+		$char: "\E0B1";
+	}
+	@if $filename == couch-o {
+		$char: "\E0B2";
+	}
+	@if $filename == envelope-o {
+		$char: "\E0B3";
+	}
+	@if $filename == tour {
+		$char: "\E0B4";
+	}
+	@if $filename == building-car {
+		$char: "\E0B5";
+	}
 
 	@return $char;
 }
@@ -1085,4 +1106,25 @@
 }
 .ing-comment-bar {
 	@include ing(comment-bar);
+}
+.ing-instagram {
+	@include ing(instagram);
+}
+.ing-smartphone {
+	@include ing(smartphone);
+}
+.ing-consultant {
+	@include ing(consultant);
+}
+.ing-couch-o {
+	@include ing(couch-o);
+}
+.ing-envelope-o {
+	@include ing(envelope-o);
+}
+.ing-tour {
+	@include ing(tour);
+}
+.ing-building-car {
+	@include ing(building-car);
 }
