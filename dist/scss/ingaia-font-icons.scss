@@ -570,6 +570,12 @@
 	@if $filename == building-car {
 		$char: "\E0B5";
 	}
+	@if $filename == barcode {
+		$char: "\E0B6";
+	}
+	@if $filename == credit-card {
+		$char: "\E0B7";
+	}
 
 	@return $char;
 }
@@ -1127,4 +1133,10 @@
 }
 .ing-building-car {
 	@include ing(building-car);
+}
+.ing-barcode {
+	@include ing(barcode);
+}
+.ing-credit-card {
+	@include ing(credit-card);
 }
