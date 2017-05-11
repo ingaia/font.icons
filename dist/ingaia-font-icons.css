@@ -744,3 +744,11 @@
 .ing-building-car:before {
 	content: "\E0B5";
 }
+
+.ing-barcode:before {
+	content: "\E0B6";
+}
+
+.ing-credit-card:before {
+	content: "\E0B7";
+}
