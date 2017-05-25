@@ -579,6 +579,9 @@
 	@if $filename == plan {
 		$char: "\E0B8";
 	}
+	@if $filename == map-maker-home-o {
+		$char: "\E0B9";
+	}
 
 	@return $char;
 }
@@ -1145,4 +1148,7 @@
 }
 .ing-plan {
 	@include ing(plan);
+}
+.ing-map-maker-home-o {
+	@include ing(map-maker-home-o);
 }
