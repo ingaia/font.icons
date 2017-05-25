@@ -576,6 +576,9 @@
 	@if $filename == credit-card {
 		$char: "\E0B7";
 	}
+	@if $filename == plan {
+		$char: "\E0B8";
+	}
 
 	@return $char;
 }
@@ -1139,4 +1142,7 @@
 }
 .ing-credit-card {
 	@include ing(credit-card);
+}
+.ing-plan {
+	@include ing(plan);
 }

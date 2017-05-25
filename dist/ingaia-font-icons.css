@@ -752,3 +752,7 @@
 .ing-credit-card:before {
 	content: "\E0B7";
 }
+
+.ing-plan:before {
+	content: "\E0B8";
+}
