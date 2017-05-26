@@ -760,3 +760,7 @@
 .ing-map-maker-home-o:before {
 	content: "\E0B9";
 }
+
+.ing-target-bold:before {
+	content: "\E0BA";
+}
