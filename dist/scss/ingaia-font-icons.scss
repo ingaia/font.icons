@@ -582,6 +582,9 @@
 	@if $filename == map-maker-home-o {
 		$char: "\E0B9";
 	}
+	@if $filename == target-bold {
+		$char: "\E0BA";
+	}
 
 	@return $char;
 }
@@ -1151,4 +1154,7 @@
 }
 .ing-map-maker-home-o {
 	@include ing(map-maker-home-o);
+}
+.ing-target-bold {
+	@include ing(target-bold);
 }
