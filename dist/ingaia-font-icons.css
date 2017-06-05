@@ -764,3 +764,11 @@
 .ing-target-bold:before {
 	content: "\E0BA";
 }
+
+.ing-reload-time:before {
+	content: "\E0BB";
+}
+
+.ing-video-camera:before {
+	content: "\E0BC";
+}

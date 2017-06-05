@@ -585,6 +585,12 @@
 	@if $filename == target-bold {
 		$char: "\E0BA";
 	}
+	@if $filename == reload-time {
+		$char: "\E0BB";
+	}
+	@if $filename == video-camera {
+		$char: "\E0BC";
+	}
 
 	@return $char;
 }
@@ -1157,4 +1163,10 @@
 }
 .ing-target-bold {
 	@include ing(target-bold);
+}
+.ing-reload-time {
+	@include ing(reload-time);
+}
+.ing-video-camera {
+	@include ing(video-camera);
 }
