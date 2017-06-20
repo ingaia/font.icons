@@ -591,6 +591,15 @@
 	@if $filename == video-camera {
 		$char: "\E0BC";
 	}
+	@if $filename == minus {
+		$char: "\E0BD";
+	}
+	@if $filename == minus-square {
+		$char: "\E0BE";
+	}
+	@if $filename == minus-square-o {
+		$char: "\E0BF";
+	}
 
 	@return $char;
 }
@@ -1169,4 +1178,13 @@
 }
 .ing-video-camera {
 	@include ing(video-camera);
+}
+.ing-minus {
+	@include ing(minus);
+}
+.ing-minus-square {
+	@include ing(minus-square);
+}
+.ing-minus-square-o {
+	@include ing(minus-square-o);
 }
