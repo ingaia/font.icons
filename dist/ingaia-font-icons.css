@@ -772,3 +772,15 @@
 .ing-video-camera:before {
 	content: "\E0BC";
 }
+
+.ing-minus:before {
+	content: "\E0BD";
+}
+
+.ing-minus-square:before {
+	content: "\E0BE";
+}
+
+.ing-minus-square-o:before {
+	content: "\E0BF";
+}
