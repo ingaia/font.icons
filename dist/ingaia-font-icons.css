@@ -784,3 +784,11 @@
 .ing-minus-square-o:before {
 	content: "\E0BF";
 }
+
+.ing-ellipsis-h:before {
+	content: "\E0C0";
+}
+
+.ing-ellipsis-v:before {
+	content: "\E0C1";
+}

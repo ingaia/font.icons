@@ -600,6 +600,12 @@
 	@if $filename == minus-square-o {
 		$char: "\E0BF";
 	}
+	@if $filename == ellipsis-h {
+		$char: "\E0C0";
+	}
+	@if $filename == ellipsis-v {
+		$char: "\E0C1";
+	}
 
 	@return $char;
 }
@@ -1187,4 +1193,10 @@
 }
 .ing-minus-square-o {
 	@include ing(minus-square-o);
+}
+.ing-ellipsis-h {
+	@include ing(ellipsis-h);
+}
+.ing-ellipsis-v {
+	@include ing(ellipsis-v);
 }
