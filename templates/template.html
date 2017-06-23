@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Examples</title>
+<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<title>inGaia Font Icon</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
@@ -21,14 +23,15 @@
 	text-transform: none;
 }
 
-body { background-color: #dedede; }
+body { background-color: #2969B0; }
 .container { margin-bottom: 60px; }
 .menu { padding: 20px 0 0 15px; }
 .ing, .ing-binary { font-size: 50px; }
 
 #exemple { margin-top: 20px; }
 #exemple:nth-child(1) { margin-right: 10px; }
-.exemple { display: none; }
+.exemple { display: none; color: #eceeef !important;}
+.exemple pre { color: #eceeef; }
 .download a i { font-size: 17px; font-style: normal; }
 
 .my-class-name:before{
@@ -47,10 +50,12 @@ i{ display: block; }
 
 .clearfix:after { content:"."; 	display:block; height:0; clear:both; visibility:hidden }
 
-
-
+input {color: #54ACD2 !important; background-color: #475577 !important; }
+.input-group-addon { color: #7ee28b; background-color: #00A885; }
 .card { margin-top: 15px; }
-#icon-list .card-block { color: #fff; }
+.card:hover { box-shadow: 0px 0px 15px 9px #3d8eb9; }
+.bg-card { background-color: #3D8EB9; border-color: #3D8EB9; }
+#icon-list .card-block { color: #eceeef; }
 .card-footer { max-height: 62px; }
 
 .list-inline-item:not(:last-child) { margin-right: -5px; }
@@ -112,7 +117,7 @@ i{ display: block; }
   right: 10px;
   top: 16px;
   position: absolute;
-  color: #a9a9a9;
+  color: #7ee28b;
   font-size: 14px;
   z-index: 4;
 }
@@ -125,19 +130,19 @@ i{ display: block; }
 		<div class="col-xs-12 col-sm-8 menu text-xs-center text-sm-left">
 			<ul class="icon-show-type btn-group" data-toggle="buttons">
 				<li class="list-inline-item" onclick="showIconType(0)">
-					<label class="btn btn-lg btn-outline-danger first active">
+					<label class="btn btn-lg btn-outline-info first active">
 						<input type="radio" name="icon-type" checked>
 						<span class="text-uppercase">className</span>
 					</label>
 				</li>
 				<li class="list-inline-item" onclick="showIconType(1)">
-					<label class="btn btn-lg btn-outline-danger middle">
+					<label class="btn btn-lg btn-outline-info middle">
 						<input type="radio" name="icon-type">
 						<span class="text-uppercase">hex</span>
 					</label>
 				</li>
 				<li class="list-inline-item" onclick="showIconType(2)">
-					<label class="btn btn-lg btn-outline-danger last">
+					<label class="btn btn-lg btn-outline-info last">
 						<input type="radio" name="icon-type">
 						<span class="text-uppercase">binary</span>
 					</label>
@@ -211,7 +216,7 @@ i{ display: block; }
 
 
 		<div class="input-group busca animated">
-      <span class="version">v1.3.2</span>		
+      <span class="version">v1.3.3</span>		
 			<span class="input-group-addon" id="basic-addon1"><i class="ing ing-search"></i></span>
 			<input type="text" id="myInput" class="form-control form-control-lg" onkeyup="myFunction()" placeholder="Buscar...">
 		</div>
@@ -223,7 +228,7 @@ i{ display: block; }
 			<li class="class-name-demo">
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 					<div class="card text-xs-center">
-	  					<div class="card-block card-inverse card-info">
+	  					<div class="card-block card-inverse bg-card">
 							<!-- <i class="<%= cssClass %> <%= cssClass %>-<%= glyph.fileName %>"></i> -->
 							<i class="<%= cssClass %>-binary">&#<%=+('0x' + glyph.codePoint).toString(10)%>;</i>
 						</div>
@@ -238,7 +243,7 @@ i{ display: block; }
 			<li class="hex-demo">
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 					<div class="card text-xs-center">
-	  					<div class="card-block card-inverse card-info">
+	  					<div class="card-block card-inverse bg-card">
 								<!-- <i class="<%= cssClass %> <%= cssClass %>-<%= glyph.fileName %>"></i> -->
 								<i class="<%= cssClass %>-binary">&#<%=+('0x' + glyph.codePoint).toString(10)%>;</i>
 						</div>
@@ -253,7 +258,7 @@ i{ display: block; }
 			<li class="binary-demo">
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
 					<div class="card text-xs-center">
-	  					<div class="card-block card-inverse card-info">
+	  					<div class="card-block card-inverse bg-card">
 								<i class="<%= cssClass %>-binary">&#<%=+('0x' + glyph.codePoint).toString(10)%>;</i>
 						</div>
 						<div class="card-footer card-secondary">	

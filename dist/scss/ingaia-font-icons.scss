@@ -606,6 +606,54 @@
 	@if $filename == ellipsis-v {
 		$char: "\E0C1";
 	}
+	@if $filename == reload-circle {
+		$char: "\E0C2";
+	}
+	@if $filename == copy {
+		$char: "\E0C3";
+	}
+	@if $filename == arrow-up {
+		$char: "\E0C4";
+	}
+	@if $filename == sort-numeric-desc {
+		$char: "\E0C5";
+	}
+	@if $filename == sort-amount-asc {
+		$char: "\E0C6";
+	}
+	@if $filename == sort-amount-desc {
+		$char: "\E0C7";
+	}
+	@if $filename == arrow-thin-up {
+		$char: "\E0C8";
+	}
+	@if $filename == arrow-thin-down {
+		$char: "\E0C9";
+	}
+	@if $filename == arrow-thin-right {
+		$char: "\E0CA";
+	}
+	@if $filename == arrow-thin-left {
+		$char: "\E0CB";
+	}
+	@if $filename == arrows-v {
+		$char: "\E0CC";
+	}
+	@if $filename == arrows-h {
+		$char: "\E0CD";
+	}
+	@if $filename == sort-alpha-asc {
+		$char: "\E0CE";
+	}
+	@if $filename == sort-alpha-desc {
+		$char: "\E0CF";
+	}
+	@if $filename == arrows {
+		$char: "\E0D0";
+	}
+	@if $filename == arrows-alt {
+		$char: "\E0D1";
+	}
 
 	@return $char;
 }
@@ -1199,4 +1247,52 @@
 }
 .ing-ellipsis-v {
 	@include ing(ellipsis-v);
+}
+.ing-reload-circle {
+	@include ing(reload-circle);
+}
+.ing-copy {
+	@include ing(copy);
+}
+.ing-arrow-up {
+	@include ing(arrow-up);
+}
+.ing-sort-numeric-desc {
+	@include ing(sort-numeric-desc);
+}
+.ing-sort-amount-asc {
+	@include ing(sort-amount-asc);
+}
+.ing-sort-amount-desc {
+	@include ing(sort-amount-desc);
+}
+.ing-arrow-thin-up {
+	@include ing(arrow-thin-up);
+}
+.ing-arrow-thin-down {
+	@include ing(arrow-thin-down);
+}
+.ing-arrow-thin-right {
+	@include ing(arrow-thin-right);
+}
+.ing-arrow-thin-left {
+	@include ing(arrow-thin-left);
+}
+.ing-arrows-v {
+	@include ing(arrows-v);
+}
+.ing-arrows-h {
+	@include ing(arrows-h);
+}
+.ing-sort-alpha-asc {
+	@include ing(sort-alpha-asc);
+}
+.ing-sort-alpha-desc {
+	@include ing(sort-alpha-desc);
+}
+.ing-arrows {
+	@include ing(arrows);
+}
+.ing-arrows-alt {
+	@include ing(arrows-alt);
 }
