@@ -792,3 +792,67 @@
 .ing-ellipsis-v:before {
 	content: "\E0C1";
 }
+
+.ing-reload-circle:before {
+	content: "\E0C2";
+}
+
+.ing-copy:before {
+	content: "\E0C3";
+}
+
+.ing-arrow-up:before {
+	content: "\E0C4";
+}
+
+.ing-sort-numeric-desc:before {
+	content: "\E0C5";
+}
+
+.ing-sort-amount-asc:before {
+	content: "\E0C6";
+}
+
+.ing-sort-amount-desc:before {
+	content: "\E0C7";
+}
+
+.ing-arrow-thin-up:before {
+	content: "\E0C8";
+}
+
+.ing-arrow-thin-down:before {
+	content: "\E0C9";
+}
+
+.ing-arrow-thin-right:before {
+	content: "\E0CA";
+}
+
+.ing-arrow-thin-left:before {
+	content: "\E0CB";
+}
+
+.ing-arrows-v:before {
+	content: "\E0CC";
+}
+
+.ing-arrows-h:before {
+	content: "\E0CD";
+}
+
+.ing-sort-alpha-asc:before {
+	content: "\E0CE";
+}
+
+.ing-sort-alpha-desc:before {
+	content: "\E0CF";
+}
+
+.ing-arrows:before {
+	content: "\E0D0";
+}
+
+.ing-arrows-alt:before {
+	content: "\E0D1";
+}
