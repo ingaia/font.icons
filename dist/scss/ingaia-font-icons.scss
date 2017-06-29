@@ -660,6 +660,9 @@
 	@if $filename == check-02 {
 		$char: "\E0D3";
 	}
+	@if $filename == engineer {
+		$char: "\E0D4";
+	}
 
 	@return $char;
 }
@@ -1307,4 +1310,7 @@
 }
 .ing-check-02 {
 	@include ing(check-02);
+}
+.ing-engineer {
+	@include ing(engineer);
 }

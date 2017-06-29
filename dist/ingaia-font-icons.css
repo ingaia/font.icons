@@ -864,3 +864,7 @@
 .ing-check-02:before {
 	content: "\E0D3";
 }
+
+.ing-engineer:before {
+	content: "\E0D4";
+}
