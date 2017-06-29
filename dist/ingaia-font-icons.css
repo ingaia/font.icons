@@ -856,3 +856,11 @@
 .ing-arrows-alt:before {
 	content: "\E0D1";
 }
+
+.ing-check-square:before {
+	content: "\E0D2";
+}
+
+.ing-check-02:before {
+	content: "\E0D3";
+}
