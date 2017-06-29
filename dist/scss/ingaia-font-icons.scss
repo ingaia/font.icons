@@ -654,6 +654,12 @@
 	@if $filename == arrows-alt {
 		$char: "\E0D1";
 	}
+	@if $filename == check-square {
+		$char: "\E0D2";
+	}
+	@if $filename == check-02 {
+		$char: "\E0D3";
+	}
 
 	@return $char;
 }
@@ -1295,4 +1301,10 @@
 }
 .ing-arrows-alt {
 	@include ing(arrows-alt);
+}
+.ing-check-square {
+	@include ing(check-square);
+}
+.ing-check-02 {
+	@include ing(check-02);
 }
