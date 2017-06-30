@@ -868,3 +868,35 @@
 .ing-engineer:before {
 	content: "\E0D4";
 }
+
+.ing-check-square-o:before {
+	content: "\E0D5";
+}
+
+.ing-square:before {
+	content: "\E0D6";
+}
+
+.ing-square-o:before {
+	content: "\E0D7";
+}
+
+.ing-pencil:before {
+	content: "\E0D8";
+}
+
+.ing-th-02:before {
+	content: "\E0D9";
+}
+
+.ing-th-03:before {
+	content: "\E0DA";
+}
+
+.ing-columns-alt-02:before {
+	content: "\E0DB";
+}
+
+.ing-list-alt-02:before {
+	content: "\E0DC";
+}
