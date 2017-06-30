@@ -663,6 +663,30 @@
 	@if $filename == engineer {
 		$char: "\E0D4";
 	}
+	@if $filename == check-square-o {
+		$char: "\E0D5";
+	}
+	@if $filename == square {
+		$char: "\E0D6";
+	}
+	@if $filename == square-o {
+		$char: "\E0D7";
+	}
+	@if $filename == pencil {
+		$char: "\E0D8";
+	}
+	@if $filename == th-02 {
+		$char: "\E0D9";
+	}
+	@if $filename == th-03 {
+		$char: "\E0DA";
+	}
+	@if $filename == columns-alt-02 {
+		$char: "\E0DB";
+	}
+	@if $filename == list-alt-02 {
+		$char: "\E0DC";
+	}
 
 	@return $char;
 }
@@ -1313,4 +1337,28 @@
 }
 .ing-engineer {
 	@include ing(engineer);
+}
+.ing-check-square-o {
+	@include ing(check-square-o);
+}
+.ing-square {
+	@include ing(square);
+}
+.ing-square-o {
+	@include ing(square-o);
+}
+.ing-pencil {
+	@include ing(pencil);
+}
+.ing-th-02 {
+	@include ing(th-02);
+}
+.ing-th-03 {
+	@include ing(th-03);
+}
+.ing-columns-alt-02 {
+	@include ing(columns-alt-02);
+}
+.ing-list-alt-02 {
+	@include ing(list-alt-02);
 }
