@@ -687,6 +687,9 @@
 	@if $filename == list-alt-02 {
 		$char: "\E0DC";
 	}
+	@if $filename == report-house-chart {
+		$char: "\E0DD";
+	}
 
 	@return $char;
 }
@@ -1361,4 +1364,7 @@
 }
 .ing-list-alt-02 {
 	@include ing(list-alt-02);
+}
+.ing-report-house-chart {
+	@include ing(report-house-chart);
 }
