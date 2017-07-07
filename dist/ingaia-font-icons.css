@@ -900,3 +900,7 @@
 .ing-list-alt-02:before {
 	content: "\E0DC";
 }
+
+.ing-report-house-chart:before {
+	content: "\E0DD";
+}
