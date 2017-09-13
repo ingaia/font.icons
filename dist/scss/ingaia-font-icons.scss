@@ -1,13 +1,11 @@
-$ingaia-icons-font-path: '../fonts/' ;
-
 @font-face {
 	font-family: "ingaia-font-icons";
 	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.eot');
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.eot?#iefix') format('eot');
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.woff2') format('woff2');
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.woff') format('woff');
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.ttf') format('truetype');
-	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.svg#ingaia-font-icons') format('svg');
+	src: url('#{$ingaia-icons-font-path}ingaia-font-icons.eot?#iefix') format('eot'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.woff2') format('woff2'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.woff') format('woff'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.ttf') format('truetype'),
+		url('#{$ingaia-icons-font-path}ingaia-font-icons.svg#ingaia-font-icons') format('svg');
 }
 
 @mixin ing-styles {
