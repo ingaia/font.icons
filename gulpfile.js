@@ -31,7 +31,7 @@ gulp.task('iconfont-css', function(){
 	.pipe(iconfont({
 	  fontName: fontName,
 	  normalize:true,
-	  formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
+	  formats: ['eot', 'woff2', 'woff', 'ttf', 'svg'],
 	  timestamp: runTimestamp
 	 }))
 	.pipe(gulp.dest('dist/fonts'));
@@ -55,7 +55,7 @@ gulp.task('iconfont-sass', function(){
 	.pipe(iconfont({
 	  fontName: fontName,
 	  normalize:true,
-	  formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
+	  formats: ['eot', 'woff2', 'woff', 'ttf', 'svg'],
 	  timestamp: runTimestamp
 	 }))
 	.pipe(gulp.dest('dist/fonts'));
@@ -79,7 +79,7 @@ gulp.task('template-html', function(){
 	.pipe(iconfont({
 	  fontName: fontName,
 	  normalize:true,
-	  formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
+	  formats: ['eot', 'woff2', 'woff', 'ttf', 'svg'],
 	  timestamp: runTimestamp
 	 }))
 	.pipe(gulp.dest('dist/fonts'));
