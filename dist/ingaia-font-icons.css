@@ -904,3 +904,23 @@
 .ing-report-house-chart:before {
 	content: "\E0DD";
 }
+
+.ing-car-outline:before {
+	content: "\E0DE";
+}
+
+.ing-gaver-outline:before {
+	content: "\E0DF";
+}
+
+.ing-house-outline:before {
+	content: "\E0E0";
+}
+
+.ing-money-outline:before {
+	content: "\E0E1";
+}
+
+.ing-user-outline:before {
+	content: "\E0E2";
+}

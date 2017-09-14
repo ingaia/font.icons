@@ -3,6 +3,7 @@ var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var iconfontTemplate = require('gulp-iconfont-template');
 var runSequence = require('run-sequence');
+var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var del = require('del');
 var runTimestamp = Math.round(Date.now()/1000);
@@ -17,7 +18,6 @@ gulp.task('clean', function() {
 
 //Cria o arquivo CSS
 gulp.task('iconfont-css', function(){
-
   return gulp.src(['svg/*.svg'])
 	.pipe(rename(function (path) {
 		path.basename = path.basename.replace(/[0-9]{4}-/g, '');
@@ -33,9 +33,16 @@ gulp.task('iconfont-css', function(){
 	  normalize:true,
 	  formats: ['eot', 'woff2', 'woff', 'ttf', 'svg'],
 	  timestamp: runTimestamp
-	 }))
+	}))
 	.pipe(gulp.dest('dist/fonts'));
+});
 
+//Cria o arquivo CSS Minificado
+gulp.task('cssmin', function () {
+	return gulp.src('dist/**/*.css')
+			.pipe(cssmin())
+			.pipe(rename({suffix: '.min'}))
+			.pipe(gulp.dest('dist/'));
 });
 
 //Cria o arquivo SASS
@@ -57,9 +64,8 @@ gulp.task('iconfont-sass', function(){
 	  normalize:true,
 	  formats: ['eot', 'woff2', 'woff', 'ttf', 'svg'],
 	  timestamp: runTimestamp
-	 }))
+	}))
 	.pipe(gulp.dest('dist/fonts'));
-
 });
 
 //Cria o arquivo HTML
@@ -81,13 +87,13 @@ gulp.task('template-html', function(){
 	  normalize:true,
 	  formats: ['eot', 'woff2', 'woff', 'ttf', 'svg'],
 	  timestamp: runTimestamp
-	 }))
+	}))
 	.pipe(gulp.dest('dist/fonts'));
 
 });
 
 gulp.task('default', function(callback) {
   runSequence('clean',
-              ['template-html','iconfont-css', 'iconfont-sass'],              
+              ['template-html','iconfont-css', 'iconfont-sass'],['cssmin'],
               callback);
 });
