@@ -905,22 +905,22 @@
 	content: "\E0DD";
 }
 
-.ing-car-outline:before {
+.ing-car-o:before {
 	content: "\E0DE";
 }
 
-.ing-gaver-outline:before {
+.ing-gavel-o:before {
 	content: "\E0DF";
 }
 
-.ing-house-outline:before {
+.ing-home-o:before {
 	content: "\E0E0";
 }
 
-.ing-money-outline:before {
+.ing-money-bag-o:before {
 	content: "\E0E1";
 }
 
-.ing-user-outline:before {
+.ing-user-o:before {
 	content: "\E0E2";
 }
