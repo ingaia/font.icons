@@ -690,19 +690,19 @@
 	@if $filename == report-house-chart {
 		$char: "\E0DD";
 	}
-	@if $filename == car-outline {
+	@if $filename == car-o {
 		$char: "\E0DE";
 	}
-	@if $filename == gaver-outline {
+	@if $filename == gavel-o {
 		$char: "\E0DF";
 	}
-	@if $filename == house-outline {
+	@if $filename == home-o {
 		$char: "\E0E0";
 	}
-	@if $filename == money-outline {
+	@if $filename == money-bag-o {
 		$char: "\E0E1";
 	}
-	@if $filename == user-outline {
+	@if $filename == user-o {
 		$char: "\E0E2";
 	}
 
@@ -1383,18 +1383,18 @@
 .ing-report-house-chart {
 	@include ing(report-house-chart);
 }
-.ing-car-outline {
-	@include ing(car-outline);
+.ing-car-o {
+	@include ing(car-o);
 }
-.ing-gaver-outline {
-	@include ing(gaver-outline);
+.ing-gavel-o {
+	@include ing(gavel-o);
 }
-.ing-house-outline {
-	@include ing(house-outline);
+.ing-home-o {
+	@include ing(home-o);
 }
-.ing-money-outline {
-	@include ing(money-outline);
+.ing-money-bag-o {
+	@include ing(money-bag-o);
 }
-.ing-user-outline {
-	@include ing(user-outline);
+.ing-user-o {
+	@include ing(user-o);
 }
