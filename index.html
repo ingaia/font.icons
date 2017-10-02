@@ -111,7 +111,7 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 	position: fixed;
 	z-index: 999;
 	left: 0px;
-	bottom: 0px;
+	top: 0px;
 }
 .version {
   right: 10px;
@@ -127,32 +127,32 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 <div class="container">
 	
 	<div class="row">
-		<div class="col-xs-12 col-sm-8 menu text-xs-center text-sm-left">
+		<div class="col-md-7 menu text-xs-center text-md-left">
 			<ul class="icon-show-type btn-group" data-toggle="buttons">
 				<li class="list-inline-item" onclick="showIconType(0)">
-					<label class="btn btn-lg btn-outline-info first active">
+					<label class="btn btn-md btn-outline-info first active">
 						<input type="radio" name="icon-type" checked>
 						<span class="text-uppercase">className</span>
 					</label>
 				</li>
 				<li class="list-inline-item" onclick="showIconType(1)">
-					<label class="btn btn-lg btn-outline-info middle">
+					<label class="btn btn-md btn-outline-info middle">
 						<input type="radio" name="icon-type">
 						<span class="text-uppercase">hex</span>
 					</label>
 				</li>
 				<li class="list-inline-item" onclick="showIconType(2)">
-					<label class="btn btn-lg btn-outline-info last">
+					<label class="btn btn-md btn-outline-info last">
 						<input type="radio" name="icon-type">
 						<span class="text-uppercase">binary</span>
 					</label>
 				</li>
 			</ul>			
 		</div>
-		<div class="col-xs-12 col-sm-4 text-xs-center">
-			<button type="button" id="exemple" class="btn btn-outline-info btn-lg float-sm-right text-uppercase">Exemplo</button>
+		<div class="col-md-5 text-xs-center text-md-right">
+			<button type="button" id="exemple" class="btn btn-outline-info btn-md float-sm-right text-uppercase">Exemplo</button>
 			<div class="btn-group">
-			  <button type="button" id="exemple" class="btn btn-lg btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <button type="button" id="exemple" class="btn btn-md btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			    DOWNLOAD
 			  </button>
 				<div class="dropdown-menu dropdown-menu-right download">
@@ -216,7 +216,7 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 
 
 		<div class="input-group busca animated">
-      <span class="version">v1.4.2</span>	
+    		<span class="version">v1.4.3</span>	
 			<span class="input-group-addon" id="basic-addon1"><i class="ing ing-search"></i></span>
 			<input type="text" id="myInput" class="form-control form-control-lg" onkeyup="myFunction()" placeholder="Buscar...">
 		</div>
