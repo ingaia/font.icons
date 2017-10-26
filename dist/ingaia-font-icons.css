@@ -924,3 +924,7 @@
 .ing-user-o:before {
 	content: "\E0E2";
 }
+
+.ing-trash-o:before {
+	content: "\E0E3";
+}

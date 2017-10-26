@@ -705,6 +705,9 @@
 	@if $filename == user-o {
 		$char: "\E0E2";
 	}
+	@if $filename == trash-o {
+		$char: "\E0E3";
+	}
 
 	@return $char;
 }
@@ -1397,4 +1400,7 @@
 }
 .ing-user-o {
 	@include ing(user-o);
+}
+.ing-trash-o {
+	@include ing(trash-o);
 }

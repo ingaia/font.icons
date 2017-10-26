@@ -27,11 +27,12 @@ body { background-color: #fff; }
 .container { margin-bottom: 60px; }
 .menu { padding: 20px 0 0 15px; }
 .ing, .ing-binary { font-size: 50px; }
+.btn { color: #91cb74; }
 
 #exemple { margin-top: 20px; }
 #exemple:nth-child(1) { margin-right: 10px; }
-.exemple { display: none; color: #5bc0de !important;}
-.exemple pre { color: #5bc0de; }
+.exemple { display: none; color: #91cb74 !important;}
+.exemple pre { color: #91cb74; }
 .download a i { font-size: 17px; font-style: normal; }
 
 .my-class-name:before{
@@ -50,12 +51,13 @@ i{ display: block; }
 
 .clearfix:after { content:"."; 	display:block; height:0; clear:both; visibility:hidden }
 
-input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
-.input-group-addon { color: #5bc0de; background-color: #3D8EB9; }
+input {color: #91cb74 !important; background-color: ##e6e6e6 !important; }
+.form-control:focus { border-color: #91cb74; }
+.input-group-addon { color: #91cb74; background-color: #393f49; }
 .card { margin-top: 15px; }
-.card:hover { box-shadow: 0px 0px 25px 0px #3d8eb9; }
-.bg-card { background-color: #3D8EB9; border-color: #3D8EB9; }
-#icon-list .card-block { color: #eceeef; }
+.card:hover { box-shadow: 0px 0px 25px 0px #393f49; }
+.bg-card { background-color: #393f49; border-color: #393f49; }
+#icon-list .card-block { color: #91cb74; }
 .card-footer { max-height: 62px; }
 
 .list-inline-item:not(:last-child) { margin-right: -5px; }
@@ -111,16 +113,32 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 	position: fixed;
 	z-index: 999;
 	left: 0px;
-	top: 0px;
+	top: -1px;
 }
 .version {
-  right: 10px;
-  top: 16px;
-  position: absolute;
-  color: #3D8EB9;
-  font-size: 14px;
-  z-index: 4;
+	right: 10px;
+	top: 16px;
+	position: absolute;
+	color: #91cb74;
+	font-size: 14px;
+	z-index: 4;
 }
+
+.box{
+	background: #393f49;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+.box i { 
+	color: #91cb74; 
+	line-height: 50px;
+}
+
 </style>
 </head>
 <body>
@@ -130,19 +148,19 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 		<div class="col-md-7 menu text-xs-center text-md-left">
 			<ul class="icon-show-type btn-group" data-toggle="buttons">
 				<li class="list-inline-item" onclick="showIconType(0)">
-					<label class="btn btn-md btn-outline-info first active">
+					<label class="btn btn-md btn-outline-secondary first active">
 						<input type="radio" name="icon-type" checked>
 						<span class="text-uppercase">className</span>
 					</label>
 				</li>
 				<li class="list-inline-item" onclick="showIconType(1)">
-					<label class="btn btn-md btn-outline-info middle">
+					<label class="btn btn-md btn-outline-secondary middle">
 						<input type="radio" name="icon-type">
 						<span class="text-uppercase">hex</span>
 					</label>
 				</li>
 				<li class="list-inline-item" onclick="showIconType(2)">
-					<label class="btn btn-md btn-outline-info last">
+					<label class="btn btn-md btn-outline-secondary last">
 						<input type="radio" name="icon-type">
 						<span class="text-uppercase">binary</span>
 					</label>
@@ -150,9 +168,9 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 			</ul>			
 		</div>
 		<div class="col-md-5 text-xs-center text-md-right">
-			<button type="button" id="exemple" class="btn btn-outline-info btn-md float-sm-right text-uppercase">Exemplo</button>
+			<button type="button" id="exemple" class="btn btn-outline-secondary btn-md float-sm-right text-uppercase">Exemplo</button>
 			<div class="btn-group">
-			  <button type="button" id="exemple" class="btn btn-md btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <button type="button" id="exemple" class="btn btn-md btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			    DOWNLOAD
 			  </button>
 				<div class="dropdown-menu dropdown-menu-right download">
@@ -216,7 +234,7 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 
 
 		<div class="input-group busca animated">
-    		<span class="version">v1.4.3</span>	
+    		<span class="version">v1.4.4</span>	
 			<span class="input-group-addon" id="basic-addon1"><i class="ing ing-search"></i></span>
 			<input type="text" id="myInput" class="form-control form-control-lg" onkeyup="myFunction()" placeholder="Buscar...">
 		</div>
@@ -10169,6 +10187,50 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 				</div>
 			</li>
 			
+			<li class="class-name-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse bg-card">
+							<!-- <i class="ing ing-trash-o"></i> -->
+							<i class="ing-binary">&#57571;</i>
+						</div>
+						<div class="card-footer card-secondary">	
+<pre>ing-trash-o</pre>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+			<li class="hex-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse bg-card">
+								<!-- <i class="ing ing-trash-o"></i> -->
+								<i class="ing-binary">&#57571;</i>
+						</div>
+						<div class="card-footer card-secondary">		
+<pre class="hidden-xs-up">ing-trash-o</pre>
+<pre>\E0E3</pre>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="binary-demo">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="card text-xs-center">
+	  					<div class="card-block card-inverse bg-card">
+								<i class="ing-binary">&#57571;</i>
+						</div>
+						<div class="card-footer card-secondary">	
+<pre class="hidden-xs-up">ing-trash-o</pre>
+<pre>&amp;#57571;</pre>
+						</div>
+					</div>
+				</div>
+			</li>
+			
 		</ul>
 	</div>
 
@@ -10176,7 +10238,9 @@ input {color: #54ACD2 !important; background-color: ##e6e6e6 !important; }
 
 
 
-
+<div class="box">
+	<i class="ing ing-chevron-light-up"></i>
+</div>
 
 
 
@@ -10224,6 +10288,28 @@ $( document ).ready(function() {
     $("#exemple").click(function() { 
        	$(".exemple").slideToggle();
 	});
+
+	// Botão para retornar ao topo do site	
+	var yBtn = $(window).scrollTop();
+	if(yBtn > 0){
+		$('.box').fadeIn();
+	}else{
+		$('.box').hide();
+	}
+	
+	$(window).scroll(function(){
+		if($(this).scrollTop()>0){
+			$('.box').fadeIn();
+		}else{
+			$('.box').fadeOut();
+		}
+	});
+
+	$('.box').click(function(){
+		$('html, body').animate({
+			scrollTop: 0
+		});
+	});
 });
 
 // BUSCA SCROLL
@@ -10247,9 +10333,6 @@ window.onscroll=function(){
   buscaScroll();  
 };
 buscaScroll();
-
-
-
 
 </script>
 </body>
