@@ -928,3 +928,7 @@
 .ing-trash-o:before {
 	content: "\E0E3";
 }
+
+.ing-icon-meta:before {
+	content: "\E0E4";
+}
