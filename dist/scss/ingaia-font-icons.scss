@@ -714,6 +714,9 @@
 	@if $filename == house-radar {
 		$char: "\E0E5";
 	}
+	@if $filename == user-radar {
+		$char: "\E0E6";
+	}
 
 	@return $char;
 }
@@ -1415,4 +1418,7 @@
 }
 .ing-house-radar {
 	@include ing(house-radar);
+}
+.ing-user-radar {
+	@include ing(user-radar);
 }

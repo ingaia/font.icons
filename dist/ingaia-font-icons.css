@@ -936,3 +936,7 @@
 .ing-house-radar:before {
 	content: "\E0E5";
 }
+
+.ing-user-radar:before {
+	content: "\E0E6";
+}
