@@ -717,6 +717,9 @@
 	@if $filename == user-radar {
 		$char: "\E0E6";
 	}
+	@if $filename == lock-key {
+		$char: "\E0E7";
+	}
 
 	@return $char;
 }
@@ -1421,4 +1424,7 @@
 }
 .ing-user-radar {
 	@include ing(user-radar);
+}
+.ing-lock-key {
+	@include ing(lock-key);
 }
