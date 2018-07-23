@@ -944,3 +944,11 @@
 .ing-lock-key:before {
 	content: "\E0E7";
 }
+
+.ing-house-radar-filled:before {
+	content: "\E0E8";
+}
+
+.ing-user-radar-filled:before {
+	content: "\E0E9";
+}
