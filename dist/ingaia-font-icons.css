@@ -940,3 +940,7 @@
 .ing-user-radar:before {
 	content: "\E0E6";
 }
+
+.ing-lock-key:before {
+	content: "\E0E7";
+}
