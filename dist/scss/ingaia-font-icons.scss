@@ -708,6 +708,12 @@
 	@if $filename == trash-o {
 		$char: "\E0E3";
 	}
+	@if $filename == icon-meta {
+		$char: "\E0E4";
+	}
+	@if $filename == house-radar {
+		$char: "\E0E5";
+	}
 
 	@return $char;
 }
@@ -1403,4 +1409,10 @@
 }
 .ing-trash-o {
 	@include ing(trash-o);
+}
+.ing-icon-meta {
+	@include ing(icon-meta);
+}
+.ing-house-radar {
+	@include ing(house-radar);
 }
