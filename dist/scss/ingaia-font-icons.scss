@@ -720,6 +720,12 @@
 	@if $filename == lock-key {
 		$char: "\E0E7";
 	}
+	@if $filename == house-radar-filled {
+		$char: "\E0E8";
+	}
+	@if $filename == user-radar-filled {
+		$char: "\E0E9";
+	}
 
 	@return $char;
 }
@@ -1427,4 +1433,10 @@
 }
 .ing-lock-key {
 	@include ing(lock-key);
+}
+.ing-house-radar-filled {
+	@include ing(house-radar-filled);
+}
+.ing-user-radar-filled {
+	@include ing(user-radar-filled);
 }
