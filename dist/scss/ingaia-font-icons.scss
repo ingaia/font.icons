@@ -726,6 +726,9 @@
 	@if $filename == user-radar-filled {
 		$char: "\E0E9";
 	}
+	@if $filename == signature {
+		$char: "\E0EA";
+	}
 
 	@return $char;
 }
@@ -1439,4 +1442,7 @@
 }
 .ing-user-radar-filled {
 	@include ing(user-radar-filled);
+}
+.ing-signature {
+	@include ing(signature);
 }
