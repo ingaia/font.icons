@@ -952,3 +952,7 @@
 .ing-user-radar-filled:before {
 	content: "\E0E9";
 }
+
+.ing-signature:before {
+	content: "\E0EA";
+}
