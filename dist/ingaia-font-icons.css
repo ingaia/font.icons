@@ -956,3 +956,7 @@
 .ing-signature:before {
 	content: "\E0EA";
 }
+
+.ing-lock-03:before {
+	content: "\E0EB";
+}

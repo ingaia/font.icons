@@ -729,6 +729,9 @@
 	@if $filename == signature {
 		$char: "\E0EA";
 	}
+	@if $filename == lock-03 {
+		$char: "\E0EB";
+	}
 
 	@return $char;
 }
@@ -1445,4 +1448,7 @@
 }
 .ing-signature {
 	@include ing(signature);
+}
+.ing-lock-03 {
+	@include ing(lock-03);
 }
