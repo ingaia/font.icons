@@ -960,3 +960,7 @@
 .ing-lock-03:before {
 	content: "\E0EB";
 }
+
+.ing-shopping-bag:before {
+	content: "\E0EC";
+}

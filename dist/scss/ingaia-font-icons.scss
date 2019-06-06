@@ -732,6 +732,9 @@
 	@if $filename == lock-03 {
 		$char: "\E0EB";
 	}
+	@if $filename == shopping-bag {
+		$char: "\E0EC";
+	}
 
 	@return $char;
 }
@@ -1451,4 +1454,7 @@
 }
 .ing-lock-03 {
 	@include ing(lock-03);
+}
+.ing-shopping-bag {
+	@include ing(shopping-bag);
 }
